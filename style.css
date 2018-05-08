@@ -1,7 +1,13 @@
+html{
+    background: white;
+}
 body{
+    margin: 10px;
     color: #fff;
     font-family: TW Cen MT condensed;
+    font-size: 30px;
     text-align: center;
+    background-size: 100%;
 }
 #content{
     height: 100%;
@@ -16,7 +22,7 @@ body{
     "nav main main main";
 }
 #content > *{
-    background: rgb(61, 134, 61);
+    background: rgb(61, 134, 61, 0.3);
     padding: 30px;
 }
 
