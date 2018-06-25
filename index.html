@@ -3,7 +3,9 @@
         <meta charset="utf-8">
         <title>Natur- und Wanderverein Dachsberg e.V.</title>
         <link rel="stylesheet" href="style.css">
-        <script type="text/javascript" src="js.js" langu></script>
+        <script src="js/jquery-3.3.1.js"></script>
+        <script type="text/javascript" src="js/index.js" ></script>
+
     </head>
     <body onload="wechsleHintergrund()">
         <div id="content">
@@ -13,12 +15,45 @@
                 </div>
                 <div id="angebote" class="topnav">Angebote</div>
                 <div id="galerie" class="topnav">Galerie</div>
-                <div id="ueberuns" class="topnav">Über uns</div>
+                <div id="ueberuns" class="topnav">Über&nbsp;uns</div>
                 <div id="kontakt" class="topnav">Kontakt</div>
             </header>
 
-            <main>Main</main>
-            <nav>Nav</nav>
+            <nav>
+                <div class="leftnav">Aktionen</div>
+                <div class="leftnav">Wanderplan</div>
+                <div class="leftnav">Wandertouren der Region</div>
+                <img id="bildangebote" src="img/weitere seiten/50 Wegweiser Wanderplan-Seite.jpg"> 
+            </nav>
+
+            <main>
+                <div id="tabelleangebotehead">Folgende Angebote bieten wir Ihnen an:</div>
+                <table id="tabelleangebote">
+                    <tr>
+                        <td class="kurztexttab"><u>Halbtagswanderungen</u></td>  
+                        <td class="langtexttab">sind leichte Wanderungen mit moderaten Höhenunterschieden, die in der Regel 3-4 Stunden dauern</td> 
+                    </tr>
+                    <tr>
+                        <td class="kurztexttab"><u>Ganztagswanderungen</u></td>
+                        <td class="langtexttab">haben sportlichen Charakter und setzen eine gewisse Grundkondition voraus</td>
+                    </tr>
+                    <tr>
+                        <td class="kurztexttab"><u>Frühstückswanderungen</u></td>
+                        <td class="langtexttab">sind leichte Wanderungen und verbinden eine morgendliche Tour mit anschließendem gemeinsamem Frühstück</td>
+                    </tr>   
+                    <tr>
+                        <td class="kurztexttab"><u>Alpine Wanderungen</u></td>
+                        <td class="langtexttab">Lorem Ipsum Adasd DSDDSdasd dsdasdd asdsdasd adsasddd sadsdsdsddsdsd assd asdsdsdsa dfgdjdja fasd</td>
+                    </tr>
+                    <tr>
+                        <td class="kurztexttab"><u>Wander-Wochenenden</u></td>
+                        <td class="langtexttab">Lorem Ipsum Adasd DSDDSdasd dsdasdd asdsdasd adsasddd sadsdsdsddsdsd assd asdsdsdsa dfgdjdja fasd</td>
+                    </tr>                
+                </table>
+                <div id="wanderplanlinkcontainer"><div href="platzhalter.de" id="linkwanderplan" >Hier geht's zum aktuellen Wanderplan</div></div>
+                <div id="infowanderplan">Zu unseren Wanderungen sind auch Nicht-Vereinsmitglieder herzlich willkommen!</div>
+            </main>
+            
         </div>
    
     </body>
