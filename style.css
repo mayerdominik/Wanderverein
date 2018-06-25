@@ -24,9 +24,11 @@ header{
     padding: 30px;
     grid-area: header;
     display: grid;
-    grid-template-columns: 5, 1;
+    grid-template-columns: 5, 2;
     grid-gap: 5%;
-    grid-template-areas: "logo angebote galerie ueberuns kontakt";
+    grid-template-areas: 
+    "logo angebote galerie ueberuns kontakt"
+    "trenner trenner trenner trenner trenner";
     background: white;
 }
 main {
@@ -36,7 +38,7 @@ main {
 }
 nav {
     grid-area: nav;
-    background: rgb(61, 134, 61, 0.3);
+    background: rgb(61, 134, 61, 0.0);
     position: relative;
     padding: 2%;
 }
@@ -68,6 +70,11 @@ nav {
 }
 #kontakt{
     grid-area: kontakt;
+}
+#trenner{
+    background: #008080;
+    height: 20px;
+    grid-area: trenner;
 }
 
 .leftnav{
