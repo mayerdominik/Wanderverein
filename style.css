@@ -21,7 +21,6 @@ body{
 }
 
 header{
-    padding: 30px;
     grid-area: header;
     display: grid;
     grid-template-columns: 5, 2;
@@ -30,6 +29,9 @@ header{
     "logo angebote galerie ueberuns kontakt"
     "trenner trenner trenner trenner trenner";
     background: white;
+    height: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 main {
     grid-area: main;
@@ -41,6 +43,7 @@ nav {
     background: rgb(61, 134, 61, 0.0);
     position: relative;
     padding: 2%;
+    max-width: 300px;
 }
 
 .topnav{
@@ -49,6 +52,7 @@ nav {
     background: white;
     color:#008080;
     padding: 24px;
+    margin-top: 20px;
 }
 .topnav:hover{
     background:#008080;
@@ -72,8 +76,9 @@ nav {
     grid-area: kontakt;
 }
 #trenner{
+    margin-top: 20px;
     background: #008080;
-    height: 20px;
+    height: 15px;
     grid-area: trenner;
 }
 
@@ -91,7 +96,9 @@ nav {
 
 #bildangebote{
     position:absolute;
+    top: 0;
     bottom: 0px;
+    
     width: 96%;
 }
 
@@ -124,10 +131,12 @@ nav {
     padding-left: 2%;
 }
 
-#linkwanderplan{
-    width: 95%px;
+#linkwanderplandiv{
     padding: 1%;
     background:#008080;
+}
+
+#linkwanderplan{
     color: white;
 }
 
