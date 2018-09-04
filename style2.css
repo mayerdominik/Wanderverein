@@ -1,0 +1,210 @@
+body{
+    background-color: lightblue;
+    text-align: center;
+    color: #008080;
+}
+#webseite{
+    width: 75%;
+    margin: 0 auto;
+    min-width: 840px;
+    font-family: TW Cen MT condensed;
+}
+#titel{
+    color:#008080;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    font-size: 25px;
+    padding: 10px;
+    transition: 0.1s;
+}
+#menu{
+    overflow: hidden;
+    position: fixed;
+    top: 60px;
+    width: 74.3%;
+    min-width: 840px;
+    transition: 0.3s;
+}
+#header{
+    height: 150px;
+    background: #008080;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+#header h1{
+    padding-top: 40px;
+    font-size: 60px;
+}
+#trenner1{
+    margin-top: 160px;
+    transition: 0.3s;
+}
+.trenner{
+    background: rgba(255, 255, 255, 0.8);
+    color: #008080;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-size: 30px;
+    padding: 10px;
+    
+}
+.page{
+    margin-top: 5px;
+    overflow: auto;
+}
+.nav{
+    float: left;
+    width: 30%;
+    background: white;
+    border-radius: 5px;
+    text-align: left;
+    
+}
+.content{
+    float: right;
+    width: 69.5%;
+    background: white;
+    color: black;
+    border-radius: 5px;
+}
+
+#logo{
+    float: left;
+    margin-top: 35px;
+    margin-left: 3%;
+    transition: 0.3s;
+}
+#logobild{
+    transition: 0.3s;
+}
+.topnav{
+    float: right;
+    text-align: center;
+    padding: 20px;
+    margin-top: 36px;
+    margin-right: 2.8%;
+    font-size: 30px;
+    background: white;
+    color: #008080;
+    border-color: white;
+    width: 10%;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+.topnav:hover{
+    background:#008080;
+    color: white;
+    border-color: white;
+}
+.leftnav{
+    text-align: center;
+    width: 95%;
+    margin-left: 2.25%;
+    margin-top: 10px;
+    background: white;
+    color: #008080;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 30px;
+    border-radius: 3px;
+    border-color: #008080;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 10px;
+    transition: 0.2s;
+}
+.leftnav:hover{
+    background:#008080;
+    color: white;
+}
+
+#bildangebote{
+    margin-bottom: 10px;
+    width: 95.5%;
+    border-radius: 3px;
+    margin-left: 2.25%;
+}
+#tabelleangebotehead{
+    padding:2%;
+    font-size: 35px;
+
+}
+#tabelleangebote{
+    padding:2%;
+    padding-top: 0px;
+    width: 100%;
+    color: black;
+}
+.kurztexttab{
+    font-size: 35px;
+    width: 31%;
+    padding: 1%;
+}
+.langtexttab{
+    font-size: 25px;
+    vertical-align: bottom;
+    width: 65%;
+    padding: 1%; 
+}
+#wanderplanlinkcontainer{
+    padding-left: 2%;
+}
+#linkwanderplandiv{
+    padding: 1%;
+    font-size: 25px;
+    background:#008080;
+}
+#linkwanderplan{
+    color: white;
+}
+#infowanderplan{
+    font-size: 25px;
+    padding: 2%;
+}
+.vierspalttab{
+    width: 22%;
+    font-size: 25px;
+    padding: 1%;
+}
+.dreispalttab{
+    font-size: 35px;
+    width: 60%;
+    padding: 1%;
+}
+.dreispalttabkurz{
+    font-size: 35px;
+    text-align: right;
+    width: 18%;
+    padding: 1%;
+}
+#bildangebote2{
+    margin-bottom: 10px;
+    width: 95%;
+    border-radius: 3px;
+    margin-left: 2.25%;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+#bildangebote3{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 95%;
+    border-radius: 3px;
+    margin-left: 2.25%;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+#bildangebote2desc{
+    font-size: 30px;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+.selected{
+    background:#008080;
+    color: white;
+}

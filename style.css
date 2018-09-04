@@ -8,6 +8,7 @@ body{
     font-size: 30px;
     background-size: 100%;
 }
+
 #content{
     height: 100%;
     display: grid;
@@ -15,7 +16,7 @@ body{
     grid-auto-rows: 140px 80%;
     max-width: 100%;
     margin: 0 auto;
-    grid-template-areas: 
+    grid-template-areas:
     "header header header header"
     "nav main main main";
 }
@@ -44,6 +45,7 @@ nav {
     position: relative;
     padding: 2%;
     max-width: 300px;
+    min-height: 470px;
 }
 
 .topnav{
@@ -96,7 +98,7 @@ nav {
 
 #bildangebote{
     position:absolute;
-    top: 0;
+    
     bottom: 0px;
     
     width: 96%;

@@ -1,23 +1,95 @@
-function wechsleHintergrund(){
-    let body = document.getElementsByTagName("body")[0];
-    let rand = Math.floor((Math.random()*12)+1);
-    let url = "";
+window.onscroll = function() {scrollFunction()};
+let page1 = "1";
+let page2 = "galerie1";
+let page3 = "ueberuns1";
+let page4 = "kontakt1";
 
-        /*switch(rand){
-            case 1: url = "img/startseite/1 Kaiser Rudolf.jpg"; break;
-            case 2: url = "img/startseite/2 Klosterweiher.jpg"; break;
-            case 3: url = "img/startseite/3 Frühlingswiese.jpg"; break;
-            case 4: url = "img/startseite/4 Wittenschwand.jpg"; break;
-            case 5: url = "img/startseite/5 Feldberg.jpg"; break;
-            case 6: url = "img/startseite/6 Kaiser Rudolf Fest.jpg"; break; 
-            case 7: url = "img/startseite/7 Wald und Wiese.jpg"; break;
-            case 8: url = "img/startseite/8 Wiese Kalte-Herberge.jpg"; break;
-            case 9: url = "img/startseite/9 Kaiser Rudolf Schnee.jpg"; break;
-            case 10: url = "img/startseite/10 Finsterlingen Alpen.jpg"; break;
-            case 11: url = "img/startseite/11 Klosterweiher.jpg"; break;
-            case 12: url = "img/startseite/45-Blumenwiese-mit-Belchen.jpg"; break;
+function scrollFunction(){
+    let topnav = document.getElementsByClassName("topnav");
+    
+    if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 80) {
+        document.getElementById("header").style.height = "90px";
+        document.getElementById("titel").style.visibility = "hidden";
+        document.getElementById("menu").style.top="0";
+        document.getElementById("logobild").style.height="60px";
+        document.getElementById("logo").style.marginTop="15px";
+        document.getElementById("trenner1").style.marginTop="160px";
+        for(let i = 0; i<4; i++){
+            topnav[i].style.marginTop="22px";
+            topnav[i].style.padding="5px";
         }
-    body.setAttribute("background", url);
-    setTimeout(wechsleHintergrund, 10000);*/
-    //To-Do: Fließender Übergang der Bilder
+      } else {
+        document.getElementById("header").style.height = "150px";
+        document.getElementById("titel").style.visibility = "visible";
+        document.getElementById("menu").style.top="60px";
+        document.getElementById("logobild").style.height="78px";
+        document.getElementById("logo").style.marginTop="35px";
+        document.getElementById("trenner1").style.marginTop="160px";
+        for(let i = 0; i<4; i++){
+            topnav[i].style.marginTop="36px";
+            topnav[i].style.padding="20px";
+        }
+      }
+}
+
+function wechsleInhalt(seite, id){
+    let elementalt="";
+    let elementneu = "" + seite + id;
+    let navneu="";
+    let navalt="";
+    switch(seite){
+        case "angebote": 
+            elementalt = "angebote" + page1;
+            navalt = "leftnava" + page1;
+            document.getElementById(elementalt).style.display = "none";
+            document.getElementById(elementneu).style.display = "inline";
+            document.getElementById(elementneu).style.top = "0";
+            page1 = id;
+            if(elementneu == "angebote1"){
+                navneu="leftnava1";
+                document.getElementById("angebotenav").innerHTML = '<img id="bildangebote" src="img/weitere seiten/50 Wegweiser Wanderplan-Seite.jpg">';
+            }
+            if(elementneu == "angebote2"){
+                navneu="leftnava2";
+                document.getElementById("angebotenav").innerHTML = '<img id="bildangebote2" src="img/weitere seiten/51 Kreuzfelsen vorher Aktionen-Seite.jpg"> <p id="bildangebote2desc">Kreuzfelsen vorher/nachher</p> <img id="bildangebote3" src="img/weitere seiten/52 Kreuzfelsen nachher Aktionen-Seite.jpg">';
+            }
+            if(elementneu == "angebote3"){
+                navneu="leftnava3";
+                document.getElementById("angebotenav").innerHTML = '';
+            }
+            document.getElementById(navalt).classList.remove("selected");
+            document.getElementById(navneu).classList.add("selected");
+            break;
+        case "galerie": elementalt = page2; 
+            document.getElementById(elementalt).style.visibility = "hidden";
+            document.getElementById(elementneu).style.visibility = "visible";
+            page2 = elementneu;
+            break;
+        case "ueberuns": elementalt = page3;
+            document.getElementById(elementalt).style.visibility = "hidden";
+            document.getElementById(elementneu).style.visibility = "visible";
+            page3 = elementneu;
+            break;
+        case "kontakt": elementalt = page4;
+            document.getElementById(elementalt).style.visibility = "hidden";
+            document.getElementById(elementneu).style.visibility = "visible";
+            page4 = elementneu;
+            break;
+        
+    }
+    setTimeout( 5000);
+    adjustheight();
+    
+}
+
+function adjustheight(){
+    let right=document.getElementById("content1").clientHeight;
+    let left=document.getElementById("nav1").clientHeight;
+    if(left>right){
+        document.getElementById("content1").style.height=left;
+    }
+    else
+    {
+        document.getElementById("nav1").style.height=right;
+    }
 }
