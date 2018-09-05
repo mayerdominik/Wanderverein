@@ -37,6 +37,7 @@ function wechsleInhalt(seite, id){
     let elementneu = "" + seite + id;
     let navneu="";
     let navalt="";
+    
     switch(seite){
         case "angebote": 
             elementalt = "angebote" + page1;
@@ -77,19 +78,27 @@ function wechsleInhalt(seite, id){
             break;
         
     }
-    setTimeout( 5000);
+    resetheight();
     adjustheight();
-    
+}
+
+function resetheight(){
+    document.getElementById("content1").style.height = "auto";
+    document.getElementById("nav1").style.height = "auto";
+    console.log(document.getElementById("content1").clientHeight);
+    console.log(document.getElementById("nav1").clientHeight);
+    console.log(document.getElementById("angebotenav").clientHeight);
 }
 
 function adjustheight(){
+    // mit "onload" der bilder erst aufrufen, wenn bilder geladen sind
     let right=document.getElementById("content1").clientHeight;
     let left=document.getElementById("nav1").clientHeight;
-    if(left>right){
+    
+    if (left>right){
         document.getElementById("content1").style.height=left;
     }
-    else
-    {
+    else{
         document.getElementById("nav1").style.height=right;
     }
 }
