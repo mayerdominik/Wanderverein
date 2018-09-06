@@ -107,7 +107,7 @@ body{
     color: #008080;
     padding-top: 16px;
     padding-bottom: 16px;
-    font-size: 30px;
+    font-size: 35px;
     border-radius: 3px;
     border-color: #008080;
     border-style: solid;
@@ -199,6 +199,7 @@ body{
     border-width: 1px;
 }
 #bildangebote2desc{
+    color: #2f2496;
     font-size: 30px;
     text-align: center;
     padding: 0px;
@@ -206,5 +207,32 @@ body{
 }
 .selected{
     background:#008080;
+    color: white;
+}
+#divtourplaner{
+    text-align: center;
+    background: white;
+    color: #2f2496;
+    padding: 30px 3%;
+    width: 65%;
+    margin-left: 14.5%;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    
+    border-radius: 3px;
+    border-color: #2f2496;
+    border-style: solid;
+    border-width: 1px;
+    transition: 0.2s;
+}
+#divtourplaner>a{
+    color: #2f2496;
+    font-size: 30px;
+}
+#divtourplaner:hover{
+    background: #2f2496;
+    color: white;
+}
+#divtourplaner:hover .divtpchild{
     color: white;
 }

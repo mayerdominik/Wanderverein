@@ -1,4 +1,7 @@
 window.onscroll = function() {scrollFunction()};
+$(document).ready(function() {
+    adjustheight();
+  });
 let page1 = "1";
 let page2 = "galerie1";
 let page3 = "ueberuns1";
@@ -37,7 +40,8 @@ function wechsleInhalt(seite, id){
     let elementneu = "" + seite + id;
     let navneu="";
     let navalt="";
-    
+
+    resetheight();
     switch(seite){
         case "angebote": 
             elementalt = "angebote" + page1;
@@ -48,15 +52,18 @@ function wechsleInhalt(seite, id){
             page1 = id;
             if(elementneu == "angebote1"){
                 navneu="leftnava1";
-                document.getElementById("angebotenav").innerHTML = '<img id="bildangebote" src="img/weitere seiten/50 Wegweiser Wanderplan-Seite.jpg">';
+                document.getElementById("angebotenav").innerHTML = '<img id="bildangebote" src="img/weitere seiten/50 Wegweiser Wanderplan-Seite.jpg" onload="adjustheight();">';
             }
             if(elementneu == "angebote2"){
                 navneu="leftnava2";
-                document.getElementById("angebotenav").innerHTML = '<img id="bildangebote2" src="img/weitere seiten/51 Kreuzfelsen vorher Aktionen-Seite.jpg"> <p id="bildangebote2desc">Kreuzfelsen vorher/nachher</p> <img id="bildangebote3" src="img/weitere seiten/52 Kreuzfelsen nachher Aktionen-Seite.jpg">';
+                document.getElementById("angebotenav").innerHTML = '<img id="bildangebote2" src="img/weitere seiten/51 Kreuzfelsen vorher Aktionen-Seite.jpg"> <p id="bildangebote2desc">Kreuzfelsen vorher/nachher</p> <img id="bildangebote3" src="img/weitere seiten/52 Kreuzfelsen nachher Aktionen-Seite.jpg" onload="adjustheight();">';
             }
             if(elementneu == "angebote3"){
                 navneu="leftnava3";
-                document.getElementById("angebotenav").innerHTML = '';
+                let angebote3string = '<div id ="divtourplaner"><a href="https://www.touren-suedschwarzwald.de/de/tour/themenwege/dachsberg-rund-um-das-horbacher-moor-naturlehrpfad-/1522732/" class="divtpchild" target="_blank">Tourenplaner der Ferienwelt Südschwarzwald</a></div>';
+                document.getElementById("angebotenav").innerHTML = angebote3string;
+                adjustheight();
+                // -> Hintergrundbild 1. Content document.getElementById("content1").style.backgroundImage = "URL('img/weitere seiten/53 Feldsee Wandertouren-Seite.JPG')";
             }
             document.getElementById(navalt).classList.remove("selected");
             document.getElementById(navneu).classList.add("selected");
@@ -76,22 +83,15 @@ function wechsleInhalt(seite, id){
             document.getElementById(elementneu).style.visibility = "visible";
             page4 = elementneu;
             break;
-        
     }
-    resetheight();
-    adjustheight();
 }
 
 function resetheight(){
     document.getElementById("content1").style.height = "auto";
     document.getElementById("nav1").style.height = "auto";
-    console.log(document.getElementById("content1").clientHeight);
-    console.log(document.getElementById("nav1").clientHeight);
-    console.log(document.getElementById("angebotenav").clientHeight);
 }
 
 function adjustheight(){
-    // mit "onload" der bilder erst aufrufen, wenn bilder geladen sind
     let right=document.getElementById("content1").clientHeight;
     let left=document.getElementById("nav1").clientHeight;
     
