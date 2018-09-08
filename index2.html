@@ -178,35 +178,57 @@
         <div id="trenner3" class="trenner">Über uns</div>
         <div id="page3" class="page">
                 <div id="nav3" class="nav">
-                    <div class="leftnav">Chronik</div>
-                    <div class="leftnav">Gemeinschaft</div>
+                    <div class="leftnav" id="leftnavc1" onclick="wechsleInhalt('ueberuns', 1);">Chronik</div>
+                    <div class="leftnav" id="leftnavc2" onclick="wechsleInhalt('ueberuns', 2);">Gemeinschaft</div>
                 </div>
                 <div id="content3" class="content">
-                    <div id="ueberuns1">Die Gründungsmitglieder des Natur- und Wandervereins waren überwiegend Mitglieder des Schwarzwaldvereins, der im Jahre 1972 durch Eugen Fesenmeier ins Leben gerufen wurde.
-                            Die damalige Ortsgruppe Dachsberg des Schwarzwaldvereins war eine 
-                            sehr aktive Gruppe, aus der auch die Trachtentanzgruppe hervorging.
+                    <div id="ueberuns1">
+                        <div class = "textdiv">
+                        Die Gründungsmitglieder des Natur- und Wandervereins waren überwiegend Mitglieder des Schwarzwaldvereins, der im Jahre 1972 durch Eugen Fesenmeier ins Leben gerufen wurde.
+                        Die damalige Ortsgruppe Dachsberg des Schwarzwaldvereins war eine 
+                        sehr aktive Gruppe, aus der auch die Trachtentanzgruppe hervorging.<br><br>
                             
-                            1982 wurde die Horbacher Moorhütte, in vielen Stunden Eigenleistung der Mitglieder, erbaut und eingeweiht.
-                            Danach begannen die Meinungsverschiedenheiten mit dem Hauptverband des Schwarzwaldvereins.
-                            Unter anderem wegen der Versagung des in Aussicht gestellten Zuschusses für die Schutzhütte.
+                        1982 wurde die Horbacher Moorhütte, in vielen Stunden Eigenleistung der Mitglieder, erbaut und eingeweiht.
+                        Danach begannen die Meinungsverschiedenheiten mit dem Hauptverband des Schwarzwaldvereins.
+                        Unter anderem wegen der Versagung des in Aussicht gestellten Zuschusses für die Schutzhütte.<br><br>
                             
-                            Der Verein machte es sich nicht leicht und traf sich zu 3 Mitgliederversammlungen
-                            bevor man sich zum Austritt aus dem Hauptverband entschloss.
-                            Am 21 Juni 1984 traf man sich im Hotel Klosterweiherhof zur Gründungsversammlung des Natur- und Wandervereins, bei der über
-                            50 Personen anwesend waren die sich spontan als Mitglieder eintragen
-                            ließen. Nach der Gründungsversammlung traten spontan noch
-                            56 Mitglieder bei, so dass nach 14 Tagen der Mitgliederstand bei
-                            106 Personen lag.
-                            Der 1. Vorsitzende war Bernhard Kaiser, der 2. Vorsitzende war der damalige Dachsberger Bürgermeister Gustav Herr, welche die Geschicke des Vereins die ersten Jahre leiteten
+                        Der Verein machte es sich nicht leicht und traf sich zu 3 Mitgliederversammlungen
+                        bevor man sich zum Austritt aus dem Hauptverband entschloss.
+                        Am 21 Juni 1984 traf man sich im Hotel Klosterweiherhof zur Gründungsversammlung des Natur- und Wandervereins, bei der über
+                        50 Personen anwesend waren die sich spontan als Mitglieder eintragen
+                        ließen. Nach der Gründungsversammlung traten spontan noch
+                        56 Mitglieder bei, so dass nach 14 Tagen der Mitgliederstand bei
+                        106 Personen lag.
+                        
+                        Der 1. Vorsitzende war Bernhard Kaiser, der 2. Vorsitzende war der damalige Dachsberger Bürgermeister Gustav Herr, welche die Geschicke des Vereins die ersten Jahre leiteten<br><br>
                             
-                            Der Natur- und Wanderverein setzt sich satzungsgemäß für folgende Aufgaben ein:
-                                 1) Herstellung und Instandhaltung von Wegen und Wegmarkierungen,
-                                      Errichtung und Betreuung von Schutzhütten, Aussichtspunkten und Ruhebänken.
-                                 2) Veranstaltungen von gemeinschaftlichen Wanderungen und Lehrausflügen.
-                                 3) Pflege des Jugendwanderns.
-                                 4) Pflege des Natur- und Heimatschutzes.
+                        Der Natur- und Wanderverein setzt sich satzungsgemäß für folgende Aufgaben ein:<br>
+                            <ol>
+                                <li>Herstellung und Instandhaltung von Wegen und Wegmarkierungen,
+                                Errichtung und Betreuung von Schutzhütten, Aussichtspunkten und Ruhebänken.</li>
+                                <li>Veranstaltungen von gemeinschaftlichen Wanderungen und Lehrausflügen.</li>
+                                <li>Pflege des Jugendwanderns.</li>
+                                <li>Pflege des Natur- und Heimatschutzes.</li>
+                            </ol>
+                        </div>                 
                     </div>
                     <div id="ueberuns2" style="display: none;">
+                            <div id="tabelleangebotehead"><b>Wir über uns</b></div>
+                            <table id="tabelleangebote">
+                                <tr>
+                                    <td class="kurztexttab"><u>Mitgliederzahl</u></td>  
+                                    <td class="langtexttablarge">Der Verein zählt 138 Mitglieder (Stand März 2018)</td> 
+                                </tr>
+                                <tr>
+                                    <td class="kurztexttab"><u>Wer sind die Mitglieder?</u></td>  
+                                    <td class="langtexttablarge">Wir sind wanderfrohe naturliebende Menschen aus Dachsberg und aus anderen Orten. Mitten im Herzen des Biosphärengebiets Schwarzwald findet bei uns jeder „seine“ Aktivitäten, denn wir haben Angebote  für alle Altersgruppen und mit unterschiedlichen Ansprüchen an Kondition und Beweglichkeit.</td> 
+                                </tr>
+                                <tr>
+                                    <td class="kurztexttab"><u>Vereinstreffen</u></td>  
+                                    <td class="langtexttablarge">Am Anfang jeden Jahres findet eine Generalversammlung aller Mitglieder statt. Die Einladung dazu wird auch im Mitteilungsblatt der Gemeinde veröffentlicht. Gäste sind herzlich willkommen.</td> 
+                                </tr>
+                            </table>
+                            
                     </div>
                 </div>
         </div>

@@ -148,6 +148,12 @@ body{
     width: 65%;
     padding: 1%; 
 }
+.langtexttablarge{
+    font-size: 30px;
+    vertical-align: bottom;
+    width: 65%;
+    padding: 1%;
+}
 #wanderplanlinkcontainer{
     padding-left: 2%;
 }
@@ -235,4 +241,9 @@ body{
 }
 #divtourplaner:hover .divtpchild{
     color: white;
+}
+.textdiv{
+    text-align: left;
+    padding: 3%;
+    font-size: 25px;
 }
