@@ -153,7 +153,6 @@
                                 <td class="dreispalttabkurz">22</td> 
                                 <td class="dreispalttabkurz">900</td> 
                             </tr>
-
                         </table>
                 </div>
             </div>
@@ -163,14 +162,25 @@
         <div id="trenner2" class="trenner">Galerie</div>
         <div id="page2" class="page">
                 <div id="nav2" class="nav">
-                    <div class="leftnav">Jahr:</div>
-                    <div class="leftnav">2018</div>
-                    <div class="leftnav">2017</div>
-                    <div class="leftnav">2016</div>
-                    <div class="leftnav">2015</div>
+                    <div class="leftnavtext">Jahr:</div>
+                    <div class="leftnav" id="leftnavb1" onclick="wechsleInhalt('galerie', 1);">2018</div>
+                    <div class="leftnav" id="leftnavb2" onclick="wechsleInhalt('galerie', 2);">2017</div>
+                    <div class="leftnav" id="leftnavb3" onclick="wechsleInhalt('galerie', 3);">2016</div>
+                    <div class="leftnav" id="leftnavb4" onclick="wechsleInhalt('galerie', 4);">2015</div>
                 </div>
                 <div id="content2" class="content">
-                    
+                    <div id="galerie1">
+                        1
+                    </div>
+                    <div id="galerie2" style="display: none;">
+                        2
+                    </div>
+                    <div id="galerie3" style="display: none;">
+                        3
+                    </div>
+                    <div id="galerie4" style="display: none;">
+                        4
+                    </div>
                 </div>
         </div>
 
@@ -237,13 +247,14 @@
         <div id="trenner4" class="trenner">Kontakt</div>
         <div id="page4" class="page">
                 <div id="nav4" class="nav">
-                    <div class="leftnav">Erreichbarkeit</div>
-                    <div class="leftnav">Vorstand</div>
-                    <div class="leftnav">Mitglied werden</div>
+                    <div class="leftnav" id="leftnavd1" onclick="wechsleInhalt('kontakt', 1);">Erreichbarkeit</div>
+                    <div class="leftnav" id="leftnavd2" onclick="wechsleInhalt('kontakt', 2);">Vorstand</div>
+                    <div class="leftnav" id="leftnavd3" onclick="wechsleInhalt('kontakt', 3);">Mitglied werden</div>
                 </div>
                 <div id="content4" class="content">
-                    <div id="tabelleangebotehead"><b><u>Mitglieder des Vorstands:</u></b></div>
-                    <table id="tabelleangebote">
+                    <div id="kontakt1">
+                        <div id="tabelleangebotehead"><b><u>Mitglieder des Vorstands:</u></b></div>
+                        <table id="tabelleangebote">
                         <tr>
                             <td class="vierspalttab">1. Vorsitzender</td>  
                             <td class="vierspalttab">Martin Morbach</td>
@@ -278,7 +289,14 @@
                             <td class="vierspalttab">Öffentlichkeitsarbeit</td>
                             <td class="vierspalttab">Bärbel Rutzen</td>
                         </tr>                
-                    </table>
+                        </table>
+                        </div>
+                    <div id="kontakt2" style="display: none;">
+                        2
+                    </div>
+                    <div id="kontakt3" style="display: none;">
+                        3
+                    </div>
                 </div>
         </div>
     </div>

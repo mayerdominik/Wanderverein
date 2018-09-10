@@ -72,9 +72,27 @@ function wechsleInhalt(seite, id){
             break;
         case "galerie": elementalt = page2; 
             resetheight(2);
+            elementalt = "galerie" + page2;
+            navalt = "leftnavb" + page2;
             document.getElementById(elementalt).style.display = "none";
             document.getElementById(elementneu).style.display = "inline";
             page2 = id;
+            if(elementneu == "galerie1"){
+                navneu="leftnavb1";
+                adjustheight(2);
+            }
+            if(elementneu == "galerie2"){
+                navneu="leftnavb2";
+                adjustheight(2);
+            }
+            if(elementneu == "galerie3"){
+                navneu="leftnavb3";
+                adjustheight(2);
+            }
+            if(elementneu == "galerie4"){
+                navneu="leftnavb4";
+                adjustheight(2);
+            }
             break;
         case "ueberuns": elementalt = page3;
             resetheight(3);
@@ -94,13 +112,27 @@ function wechsleInhalt(seite, id){
             break;
         case "kontakt": elementalt = page4;
             resetheight(4);
+            elementalt = "kontakt" + page4;
+            navalt = "leftnavd" + page4;
             document.getElementById(elementalt).style.display = "none";
             document.getElementById(elementneu).style.display = "inline";
             page4 = id;
+            if(elementneu == "kontakt1"){
+                navneu="leftnavd1";
+                adjustheight(4);
+            }
+            if(elementneu == "kontakt2"){
+                navneu="leftnavd2";
+                adjustheight(4);
+            }
+            if(elementneu == "kontakt3"){
+                navneu="leftnavd3";
+                adjustheight(4);
+            }
             break;
-    }
-    document.getElementById(navalt).classList.remove("selected");
-    document.getElementById(navneu).classList.add("selected");
+        }
+        document.getElementById(navalt).classList.remove("selected");
+        document.getElementById(navneu).classList.add("selected");
 }
 
 function resetheight(id){

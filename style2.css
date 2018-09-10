@@ -115,9 +115,25 @@ body{
     margin-bottom: 10px;
     transition: 0.2s;
 }
+
 .leftnav:hover{
     background:#008080;
     color: white;
+}
+
+.leftnavtext{
+    text-align: center;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: 10px;
+    background: white;
+    color: #008080;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 35px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    transition: 0.2s;
 }
 
 #bildangebote{
