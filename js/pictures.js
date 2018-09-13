@@ -16,7 +16,6 @@ function loadpics(id, jahr, anzahl){
         imgurl = folderurl + imgid + ".jpg";
         imgurlbig = folderurlbig + imgid +".jpg";
         html += "<a href='" + imgurlbig + "' data-lightbox='galerie" + id +"' target='_blank'><img src='" + imgurl +"' class='galerie' onload='resetheight(2); adjustheight(2);'></a>";
-       
         document.getElementById("galerie" + id).innerHTML = html;
         
         if(imgid==anzahl){

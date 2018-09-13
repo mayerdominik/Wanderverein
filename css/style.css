@@ -24,6 +24,7 @@ body{
     width: 74.3%;
     min-width: 840px;
     transition: 0.3s;
+    z-index: 99;
 }
 #header{
     height: 150px;
