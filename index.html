@@ -2,64 +2,306 @@
     <head>
         <meta charset="utf-8">
         <title>Natur- und Wanderverein Dachsberg e.V.</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="js/jquery-3.3.1.js"></script>
+        <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+        <script type="text/javascript" src="js/lightbox.min.js"></script>
         <script type="text/javascript" src="js/index.js" ></script>
-
+        <script type="text/javascript" src="js/pictures.js" ></script>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/lightbox.min.css">
+        
     </head>
-    <body onload="wechsleHintergrund()">
-        <div id="content">
-            <header>
+    <body>
+    <div id="webseite">
+        <div id="titel">
+            Herzlich Willkommen beim Natur- und Wanderverein Dachsberg e.V.
+        </div>
+        <div id="menu">
+            
+        <div id="header">
                 <div id="logo">
-                    <img src="Testlogo.png">
+                    <img id="logobild" src="Testlogo.png">
                 </div>
-                <div id="angebote" class="topnav">Angebote</div>
-                <div id="galerie" class="topnav">Galerie</div>
-                <div id="ueberuns" class="topnav">Über&nbsp;uns</div>
-                <div id="kontakt" class="topnav">Kontakt</div>
-                <div id="trenner"></div>
-            </header>
+                <div id="kontakt" class="topnav" onclick="location.href='#trenner4';">Kontakt</div>
+                <div id="ueberuns" class="topnav" onclick="location.href='#trenner3';">Über&nbsp;uns</div>
+                <div id="galerie" class="topnav" onclick="location.href='#trenner2';">Galerie</div>
+                <div id="angebote" class="topnav" onclick="location.href='#trenner1';">Angebote</div>     
+        </div>
+    </div>
 
-            <div id="puffer">
-                <a href="#tabelleangebotehead">testanker</a>
+        <div id="trenner1" class="trenner">Angebote</div>
+        <div id="page1" class="page">
+            <div id="nav1" class="nav">
+                    <div class="leftnav" id="leftnava1" onclick="wechsleInhalt('angebote', 1);">Wanderplan</div>
+                    <div class="leftnav" id="leftnava2" onclick="wechsleInhalt('angebote', 2);">Aktionen</div>
+                    <div class="leftnav" id="leftnava3" onclick="wechsleInhalt('angebote', 3);">Wandertouren der Region</div>
+                    <div id="angebotenav" class="imgwrap"><img id="bildangebote" src="img/weitere seiten/50 Wegweiser Wanderplan-Seite.jpg"></div>
             </div>
 
-            <nav>
-                <div class="leftnav">Aktionen</div>
-                <div class="leftnav">Wanderplan</div>
-                <div class="leftnav">Wandertouren der Region</div>
-                <img id="bildangebote" src="img/weitere seiten/50 Wegweiser Wanderplan-Seite.jpg"> 
-            </nav>
-
-            <main>
-                <div id="tabelleangebotehead">Folgende Angebote bieten wir Ihnen an:</div>
-                <table id="tabelleangebote">
-                    <tr>
-                        <td class="kurztexttab"><u>Halbtagswanderungen</u></td>  
-                        <td class="langtexttab">sind leichte Wanderungen mit moderaten Höhenunterschieden, die in der Regel 3-4 Stunden dauern</td> 
-                    </tr>
-                    <tr>
-                        <td class="kurztexttab"><u>Ganztagswanderungen</u></td>
-                        <td class="langtexttab">haben sportlichen Charakter und setzen eine gewisse Grundkondition voraus</td>
-                    </tr>
-                    <tr>
-                        <td class="kurztexttab"><u>Frühstückswanderungen</u></td>
-                        <td class="langtexttab">sind leichte Wanderungen und verbinden eine morgendliche Tour mit anschließendem gemeinsamem Frühstück</td>
-                    </tr>   
-                    <tr>
-                        <td class="kurztexttab"><u>Alpine Wanderungen</u></td>
-                        <td class="langtexttab">führen uns in die schweizerischen oder österreichischen Alpen und setzen ebenfalls eine gewisse Grundkondition voraus</td>
-                    </tr>
-                    <tr>
-                        <td class="kurztexttab"><u>Wander-Wochenenden</u></td>
-                        <td class="langtexttab">sind ein- oder mehrtägige Ausflüge mit unterschiedlichen Schwierigkeitsgraden</td>
-                    </tr>                
-                </table>
-                <div id="wanderplanlinkcontainer"><div id="linkwanderplandiv"><a href="docs/Wanderplan 2018.doc" id="linkwanderplan">Hier geht's zum aktuellen Wanderplan</a></div></div>
-                <div id="infowanderplan">Zu unseren Wanderungen sind auch Nicht-Vereinsmitglieder herzlich willkommen!</div>
-            </main>
-            
+            <div id="content1" class="content">
+                <div id="angebote1">
+                        <div id="tabelleangebotehead"><b>Wir bieten verschiedene Arten von Wanderungen an:</b></div>
+                        <table id="tabelleangebote">
+                            <tr>
+                                <td class="kurztexttab"><u>Halbtagswanderungen</u></td>  
+                                <td class="langtexttab">sind leichte Wanderungen mit moderaten Höhenunterschieden, die in der Regel 3-4 Stunden dauern</td> 
+                            </tr>
+                            <tr>
+                                <td class="kurztexttab"><u>Ganztagswanderungen</u></td>
+                                <td class="langtexttab">haben sportlichen Charakter und setzen eine gewisse Grundkondition voraus</td>
+                            </tr>
+                            <tr>
+                                <td class="kurztexttab"><u>Frühstückswanderungen</u></td>
+                                <td class="langtexttab">sind leichte Wanderungen und verbinden eine morgendliche Tour mit anschließendem gemeinsamem Frühstück</td>
+                            </tr>   
+                            <tr>
+                                <td class="kurztexttab"><u>Alpine Wanderungen</u></td>
+                                <td class="langtexttab">führen uns in die schweizerischen oder österreichischen Alpen und setzen ebenfalls eine gewisse Grundkondition voraus</td>
+                            </tr>
+                            <tr>
+                                <td class="kurztexttab"><u>Wander-Wochenenden</u></td>
+                                <td class="langtexttab">sind ein- oder mehrtägige Ausflüge mit unterschiedlichen Schwierigkeitsgraden</td>
+                            </tr>                
+                        </table>
+                        <div id="wanderplanlinkcontainer"><div id="linkwanderplandiv"><a href="docs/Wanderplan 2018.doc" id="linkwanderplan">Hier geht's zum aktuellen Wanderplan</a></div></div>
+                        <div id="infowanderplan">Zu unseren Wanderungen sind auch Nicht-Vereinsmitglieder herzlich willkommen!</div>
+                </div>
+                
+                <div id="angebote2" style="display: none;">
+                        <div id="tabelleangebotehead"><b>Neben Wanderungen gibt es weitere Aktivitäten:</b></div>
+                        <table id="tabelleangebote">
+                            <tr>
+                                <td class="kurztexttab"><u>Naturschutz</u></td>  
+                                <td class="langtexttab">Der Verein pflegt regelmässig den Kreuzfelsen, um ihn frei von Bewuchs zu halten.
+                                </td> 
+                            </tr>
+                            <tr>
+                                <td class="kurztexttab"><u>Wanderweg-Pflege</u></td>  
+                                <td class="langtexttab">Wir sind verantwortlich für die Pflege der Abschnitte der Qualitätswanderwege Schluchtensteig und Albsteig, die auf der Gemarkung Dachsberg verlaufen, und zusätzlich für die lokalen Wanderwege in der Gemeinde. Insgesamt pflegen wir ca. 80 km Wegstrecken.</td> 
+                            </tr>
+                            <tr>
+                                <td class="kurztexttab"><u>Sonnenwend-Feier</u></td>  
+                                <td class="langtexttab">Jedes Jahr Ende Juni findet zeitnah zur Sommersonnenwende samstags unsere abendliche Feier an der Horbacher Moorhütte statt.
+                                </td> 
+                            </tr>
+                            <tr>
+                                <td class="kurztexttab"><u>Papiersammlung</u></td>  
+                                <td class="langtexttab">Wird zweimal jährlich durchgeführt und stärkt die Vereinsaktivitäten.
+                                </td> 
+                            </tr>
+                            <tr>
+                                <td class="kurztexttab"><u>10 Jahre Schluchtensteig</u></td>  
+                                <td class="langtexttab">Wanderopening am <b>6.Mai:</b><br> 10.00 Uhr Treffpunkt Rathaus Wittenschwand <br> ca. 3.5 stündige Wanderung über Teilstrecken des Albsteig und 					des Schluchtensteigs auf der Gemarkung Dachsberg
+                                    Abschluss bei Gegrilltem und Getränken (zum Selbstkostenpreis) am Schluchtensteig bei Ruchenschwand.
+                </td> 
+                            </tr>  
+                        </table>
+                </div>
+                    
+                <div id="angebote3" style="display: none;">
+                    <div id="tabelleangebotehead"><b>Hier ist eine Zusammenstellung attraktiver Wanderungen in unserer Nähe:</b></div>
+                        <table id="tabelleangebote">
+                            
+                            <tr>
+                                <td class="dreispalttab"><u></u></td>  
+                                <td class="dreispalttabkurz">Länge (km)</td> 
+                                <td class="dreispalttabkurz">Höhenmeter</td> 
+                            </tr>
+                            <tr>
+                                <td class="dreispalttab"><a href="https://www.touren-suedschwarzwald.de/de/tour/themenwege/dachsberg-bergbauwanderweg/1543520/" target="_blank"><u>Bergbauwanderweg Dachsberg</u></a></td>  
+                                <td class="dreispalttabkurz">7</td> 
+                                <td class="dreispalttabkurz">268</td> 
+                            </tr>
+                            <tr>
+                                <td class="dreispalttab"><a href="https://www.ferien-suedschwarzwald.de/Media/Tourenfinder/Dachsberg-Baumlehrpfad-bei-der-Dachsberg-Halle" target="_blank"><u>Baumlehrpfad Dachsberg</u></a></td>  
+                                <td class="dreispalttabkurz">1</td> 
+                                <td class="dreispalttabkurz">6</td> 
+                            </tr>
+                            <tr>
+                                <td class="dreispalttab"><a href="https://www.touren-suedschwarzwald.de/de/tour/themenwege/dachsberg-rund-um-das-horbacher-moor-naturlehrpfad-/1522732/" target="_blank"><u>Naturlehrpfad Horbacher Moor</u></a></td>  
+                                <td class="dreispalttabkurz">2</td> 
+                                <td class="dreispalttabkurz">78</td> 
+                            </tr>
+                            <tr>
+                                <td class="dreispalttab"><a href="https://www.schluchtensteig.de/" target="_blank"><u>Schluchtensteig</u></a></td>  
+                                <td class="dreispalttabkurz">119</td> 
+                                <td class="dreispalttabkurz">3179</td> 
+                            </tr>
+                            <tr>
+                                <td class="dreispalttab"><a href="https://albsteig.de/" target="_blank"><u>Albsteig</u></a></td>  
+                                <td class="dreispalttabkurz">83</td> 
+                                <td class="dreispalttabkurz">3230</td> 
+                            </tr>
+                            <tr>
+                                <td class="dreispalttab"><a href="https://www.outdooractive.com/de/wanderung/schwarzwald/ibach-geniesserpfad-ibacher-panoramaweg/2807605/" target="_blank"><u>Ibacher Panoramaweg</u></a></td>  
+                                <td class="dreispalttabkurz">12</td> 
+                                <td class="dreispalttabkurz">278</td> 
+                            </tr>
+                            <tr>
+                                <td class="dreispalttab"><a href="https://www.hochschwarzwald.de/Touren-im-Hochschwarzwald/Geniesserpfad-Todtmooser-Lebkuechlerweg" target="_blank"><u>Lebküchlerweg Todtmoos</u></a></td>  
+                                <td class="dreispalttabkurz">12</td> 
+                                <td class="dreispalttabkurz">570</td> 
+                            </tr>
+                            <tr>
+                                <td class="dreispalttab"><a href="https://www.touren-suedschwarzwald.de/de/tour/geniesserpfade/bernau-geniesserpfad-hochtal-steig-in-bernau-premiumweg-/13687142/" target="_blank"><u>Bernauer Hochtalsteig</u></a></td>  
+                                <td class="dreispalttabkurz">16</td> 
+                                <td class="dreispalttabkurz">670</td> 
+                            </tr>
+                            <tr>
+                                <td class="dreispalttab"><a href="https://www.hochschwarzwald.de/Touren-im-Hochschwarzwald/Geniesserpfad-Menzenschwander-Geissenpfad" target="_blank"><u>Menzenschwander Geissenpfad</u></a></td>  
+                                <td class="dreispalttabkurz">10</td> 
+                                <td class="dreispalttabkurz">295</td> 
+                            </tr>
+                            <tr>
+                                <td class="dreispalttab"><a href="https://www.ferien-suedschwarzwald.de/Entdecken/Attraktionen-der-Ferienwelt/Natur-im-Suedschwarzwald/Wolfswege/Direkt-zu-den-Touren-Wolfspfad-und-Wolfssteig/Hoechenschwand-Weilheim-Waldshut-Tiengen-Wolfssteig" target="_blank"><u>Wolfspfad Waldshut - Höchenschwand</u></a></td>  
+                                <td class="dreispalttabkurz">22</td> 
+                                <td class="dreispalttabkurz">900</td> 
+                            </tr>
+                        </table>
+                </div>
+            </div>
         </div>
-   
+
+
+        <div id="trenner2" class="trenner">Galerie</div>
+        <div id="page2" class="page">
+                <div id="nav2" class="nav">
+                    <div class="leftnavtext">Jahr:</div>
+                    <div class="leftnav" id="leftnavb1" onclick="wechsleInhalt('galerie', 1);">2018</div>
+                    <div class="leftnav" id="leftnavb2" onclick="wechsleInhalt('galerie', 2);">2017</div>
+                    <div class="leftnav" id="leftnavb3" onclick="wechsleInhalt('galerie', 3);">2016</div>
+                    <div class="leftnav" id="leftnavb4" onclick="wechsleInhalt('galerie', 4);">2015</div>
+                </div>
+                <div id="content2" class="content">
+                    <div id="galerie1">
+                        1
+                    </div>
+                    <div id="galerie2" style="display: none;">
+                        2
+                    </div>
+                    <div id="galerie3" style="display: none;">
+                        3
+                    </div>
+                    <div id="galerie4" style="display: none;">
+                        4
+                    </div>
+                </div>
+        </div>
+
+
+        <div id="trenner3" class="trenner">Über uns</div>
+        <div id="page3" class="page">
+                <div id="nav3" class="nav">
+                    <div class="leftnav" id="leftnavc1" onclick="wechsleInhalt('ueberuns', 1);">Chronik</div>
+                    <div class="leftnav" id="leftnavc2" onclick="wechsleInhalt('ueberuns', 2);">Gemeinschaft</div>
+                </div>
+                <div id="content3" class="content">
+                    <div id="ueberuns1">
+                        <div class = "textdiv">
+                        Die Gründungsmitglieder des Natur- und Wandervereins waren überwiegend Mitglieder des Schwarzwaldvereins, der im Jahre 1972 durch Eugen Fesenmeier ins Leben gerufen wurde.
+                        Die damalige Ortsgruppe Dachsberg des Schwarzwaldvereins war eine 
+                        sehr aktive Gruppe, aus der auch die Trachtentanzgruppe hervorging.<br><br>
+                            
+                        1982 wurde die Horbacher Moorhütte, in vielen Stunden Eigenleistung der Mitglieder, erbaut und eingeweiht.
+                        Danach begannen die Meinungsverschiedenheiten mit dem Hauptverband des Schwarzwaldvereins.
+                        Unter anderem wegen der Versagung des in Aussicht gestellten Zuschusses für die Schutzhütte.<br><br>
+                            
+                        Der Verein machte es sich nicht leicht und traf sich zu 3 Mitgliederversammlungen
+                        bevor man sich zum Austritt aus dem Hauptverband entschloss.
+                        Am 21 Juni 1984 traf man sich im Hotel Klosterweiherhof zur Gründungsversammlung des Natur- und Wandervereins, bei der über
+                        50 Personen anwesend waren die sich spontan als Mitglieder eintragen
+                        ließen. Nach der Gründungsversammlung traten spontan noch
+                        56 Mitglieder bei, so dass nach 14 Tagen der Mitgliederstand bei
+                        106 Personen lag.
+                        
+                        Der 1. Vorsitzende war Bernhard Kaiser, der 2. Vorsitzende war der damalige Dachsberger Bürgermeister Gustav Herr, welche die Geschicke des Vereins die ersten Jahre leiteten<br><br>
+                            
+                        Der Natur- und Wanderverein setzt sich satzungsgemäß für folgende Aufgaben ein:<br>
+                            <ol>
+                                <li>Herstellung und Instandhaltung von Wegen und Wegmarkierungen,
+                                Errichtung und Betreuung von Schutzhütten, Aussichtspunkten und Ruhebänken.</li>
+                                <li>Veranstaltungen von gemeinschaftlichen Wanderungen und Lehrausflügen.</li>
+                                <li>Pflege des Jugendwanderns.</li>
+                                <li>Pflege des Natur- und Heimatschutzes.</li>
+                            </ol>
+                        </div>                 
+                    </div>
+                    <div id="ueberuns2" style="display: none;">
+                            <div id="tabelleangebotehead"><b>Wir über uns</b></div>
+                            <table id="tabelleangebote">
+                                <tr>
+                                    <td class="kurztexttab"><u>Mitgliederzahl</u></td>  
+                                    <td class="langtexttablarge">Der Verein zählt 138 Mitglieder (Stand März 2018)</td> 
+                                </tr>
+                                <tr>
+                                    <td class="kurztexttab"><u>Wer sind die Mitglieder?</u></td>  
+                                    <td class="langtexttablarge">Wir sind wanderfrohe naturliebende Menschen aus Dachsberg und aus anderen Orten. Mitten im Herzen des Biosphärengebiets Schwarzwald findet bei uns jeder „seine“ Aktivitäten, denn wir haben Angebote  für alle Altersgruppen und mit unterschiedlichen Ansprüchen an Kondition und Beweglichkeit.</td> 
+                                </tr>
+                                <tr>
+                                    <td class="kurztexttab"><u>Vereinstreffen</u></td>  
+                                    <td class="langtexttablarge">Am Anfang jeden Jahres findet eine Generalversammlung aller Mitglieder statt. Die Einladung dazu wird auch im Mitteilungsblatt der Gemeinde veröffentlicht. Gäste sind herzlich willkommen.</td> 
+                                </tr>
+                            </table>
+                            
+                    </div>
+                </div>
+        </div>
+
+
+        <div id="trenner4" class="trenner">Kontakt</div>
+        <div id="page4" class="page">
+                <div id="nav4" class="nav">
+                    <div class="leftnav" id="leftnavd1" onclick="wechsleInhalt('kontakt', 1);">Erreichbarkeit</div>
+                    <div class="leftnav" id="leftnavd2" onclick="wechsleInhalt('kontakt', 2);">Vorstand</div>
+                    <div class="leftnav" id="leftnavd3" onclick="wechsleInhalt('kontakt', 3);">Mitglied werden</div>
+                </div>
+                <div id="content4" class="content">
+                    <div id="kontakt1">
+                        <div id="tabelleangebotehead"><b><u>Mitglieder des Vorstands:</u></b></div>
+                        <table id="tabelleangebote">
+                        <tr>
+                            <td class="vierspalttab">1. Vorsitzender</td>  
+                            <td class="vierspalttab">Martin Morbach</td>
+                            <td class="vierspalttab">Wegewarte</td>
+                            <td class="vierspalttab">Bernhard Kaiser</td>
+                        </tr>
+                        <tr>
+                            <td class="vierspalttab">2. Vorsitzender</td>
+                            <td class="vierspalttab">Hans-Jörg Bär</td>
+                            <td class="vierspalttab"></td>
+                            <td class="vierspalttab">Michael Siebert</td>
+                        </tr>
+                        <tr>
+                            <td class="vierspalttab">Kassierer</td>
+                            <td class="vierspalttab">Willi Büchele</td>
+                            <td class="vierspalttab"></td>
+                            <td class="vierspalttab">Bruno Stich</td>
+                        </tr>   
+                        <tr>
+                            <td class="vierspalttab">Schriftführerin</td>
+                            <td class="vierspalttab">Cornelia Kaiser</td>
+                            <td class="vierspalttab"></td>
+                            <td class="vierspalttab">Bernhard Weber</td>
+                        </tr>
+                        <tr>
+                            <td class="vierspalttab"><u>Wanderwartin</u></td>
+                            <td class="vierspalttab">Johanna Zipfel</td>
+                            <td class="vierspalttab"></td>
+                            <td class="vierspalttab">Werner Wiggert</td>
+                        </tr>   
+                        <tr>
+                            <td class="vierspalttab">Öffentlichkeitsarbeit</td>
+                            <td class="vierspalttab">Bärbel Rutzen</td>
+                        </tr>                
+                        </table>
+                        </div>
+                    <div id="kontakt2" style="display: none;">
+                        2
+                    </div>
+                    <div id="kontakt3" style="display: none;">
+                        3
+                    </div>
+                </div>
+        </div>
+    </div>
     </body>
 </html>

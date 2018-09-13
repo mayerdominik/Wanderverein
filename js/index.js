@@ -82,6 +82,7 @@ function wechsleInhalt(seite, id){
                 adjustheight(2);
             }
             if(elementneu == "galerie2"){
+                loadpics(2, "2017", 34);
                 navneu="leftnavb2";
                 adjustheight(2);
             }
