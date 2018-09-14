@@ -1,11 +1,16 @@
 window.onscroll = function() {scrollFunction()};
 $(document).ready(function() {
     for (let ah = 1; ah<=4; ah++){
+        document.getElementById("leftnava1").classList.add("selected");
+        document.getElementById("leftnavb2").classList.add("selected");
+        document.getElementById("leftnavc1").classList.add("selected");
+        document.getElementById("leftnavd1").classList.add("selected");
+        loadpics(2, "2017", 34);
         adjustheight(ah);
     }
   });
 let page1 = "1";
-let page2 = "1";
+let page2 = "2";
 let page3 = "1";
 let page4 = "1";
 
@@ -20,7 +25,6 @@ function scrollFunction(){
         document.getElementById("menu").style.top="0";
         document.getElementById("logobild").style.height="60px";
         document.getElementById("logo").style.marginTop="15px";
-        document.getElementById("trenner1").style.marginTop="160px";
         for(let i = 0; i<4; i++){
             topnav[i].style.marginTop="22px";
             topnav[i].style.padding="5px";
@@ -31,7 +35,6 @@ function scrollFunction(){
         document.getElementById("menu").style.top="60px";
         document.getElementById("logobild").style.height="78px";
         document.getElementById("logo").style.marginTop="35px";
-        document.getElementById("trenner1").style.marginTop="160px";
         for(let i = 0; i<4; i++){
             topnav[i].style.marginTop="36px";
             topnav[i].style.padding="20px";
@@ -64,7 +67,7 @@ function wechsleInhalt(seite, id){
             } 
             if(elementneu == "angebote3"){
                 navneu="leftnava3";
-                let angebote3string = '<div id ="divtourplaner"><a href="https://www.touren-suedschwarzwald.de/de/tour/themenwege/dachsberg-rund-um-das-horbacher-moor-naturlehrpfad-/1522732/" class="divtpchild" target="_blank">Tourenplaner der Ferienwelt Südschwarzwald</a></div>';
+                let angebote3string = '<div id ="divtourplaner"><a href="https://www.touren-suedschwarzwald.de/de/tourenplaner/" class="divtpchild" target="_blank">Tourenplaner der Ferienwelt Südschwarzwald</a></div>';
                 document.getElementById("angebotenav").innerHTML = angebote3string;
                 adjustheight(1);
                 // -> Hintergrundbild 1. Content document.getElementById("content1").style.backgroundImage = "URL('img/weitere seiten/53 Feldsee Wandertouren-Seite.JPG')";
@@ -82,15 +85,33 @@ function wechsleInhalt(seite, id){
                 adjustheight(2);
             }
             if(elementneu == "galerie2"){
+                loadpics(2, "2017", 34);
                 navneu="leftnavb2";
                 adjustheight(2);
             }
             if(elementneu == "galerie3"){
+                loadpics(3, "2016", 16)
                 navneu="leftnavb3";
                 adjustheight(2);
             }
             if(elementneu == "galerie4"){
+                loadpics(4, "2015", 13);
                 navneu="leftnavb4";
+                adjustheight(2);
+            }
+            if(elementneu == "galerie5"){
+                loadpics(5, "2014", 34);
+                navneu="leftnavb5";
+                adjustheight(2);
+            }
+            if(elementneu == "galerie6"){
+                loadpics(6, "2013", 10);
+                navneu="leftnavb6";
+                adjustheight(2);
+            }
+            if(elementneu == "galerie7"){
+                loadpics(7, "2012", 11);
+                navneu="leftnavb7";
                 adjustheight(2);
             }
             break;
@@ -149,9 +170,21 @@ function adjustheight(id){
     let left=document.getElementById(nav).clientHeight;
     
     if (left>right){
-        document.getElementById(content).style.height=left;
+        document.getElementById(content).style.height= left;
     }
     else{
-        document.getElementById(nav).style.height=right;
+        document.getElementById(nav).style.height= right;
     }
 }
+
+/*function springezu(id){
+    let trennerid = "trenner" + id;
+    let seite = document.getElementById("webseite");
+    let trenner = document.getElementById(trennerid);
+    let puffer = document.createElement("div");
+    puffer.className = "puffer";
+    puffer.id = "puffer";
+    seite.insertBefore(puffer, trenner);
+    trenner.style.marginTop = "90px";
+    location.href="#puffer";
+}*/
