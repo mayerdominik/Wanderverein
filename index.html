@@ -6,6 +6,7 @@
         <script type="text/javascript" src="js/lightbox.min.js"></script>
         <script type="text/javascript" src="js/index.js" ></script>
         <script type="text/javascript" src="js/pictures.js" ></script>
+        <script type="text/javascript" src="js/formular.js" ></script>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/lightbox.min.css">
         
@@ -19,15 +20,15 @@
             
         <div id="header">
                 <div id="logo">
-                    <img id="logobild" src="Testlogo.png">
+                    <img id="logobild" src="img/weitere seiten/Logo.JPG">
                 </div>
-                <div id="kontakt" class="topnav" onclick="location.href='#trenner4';">Kontakt</div>
-                <div id="ueberuns" class="topnav" onclick="location.href='#trenner3';">Über&nbsp;uns</div>
-                <div id="galerie" class="topnav" onclick="location.href='#trenner2';">Galerie</div>
-                <div id="angebote" class="topnav" onclick="location.href='#trenner1';">Angebote</div>     
+                <div id="kontakt" class="topnav" onclick="location.href='#puffer4';">Kontakt</div>
+                <div id="ueberuns" class="topnav" onclick="location.href='#puffer3';">Über&nbsp;uns</div>
+                <div id="galerie" class="topnav" onclick="location.href='#puffer2';">Galerie</div>
+                <div id="angebote" class="topnav" onclick="location.href='#puffer1';">Angebote</div>     
         </div>
     </div>
-
+        <div id="puffer1" class="puffer"></div>
         <div id="trenner1" class="trenner">Angebote</div>
         <div id="page1" class="page">
             <div id="nav1" class="nav">
@@ -62,7 +63,7 @@
                                 <td class="langtexttab">sind ein- oder mehrtägige Ausflüge mit unterschiedlichen Schwierigkeitsgraden</td>
                             </tr>                
                         </table>
-                        <div id="wanderplanlinkcontainer"><div id="linkwanderplandiv"><a href="docs/Wanderplan 2018.doc" id="linkwanderplan">Hier geht's zum aktuellen Wanderplan</a></div></div>
+                        <div id="wanderplanlinkcontainer"><div id="linkwanderplandiv"><a href="docs/Wanderplan 2018.pdf" id="linkwanderplan" target="_blank">Hier geht's zum aktuellen Wanderplan</a></div></div>
                         <div id="infowanderplan">Zu unseren Wanderungen sind auch Nicht-Vereinsmitglieder herzlich willkommen!</div>
                 </div>
                 
@@ -161,7 +162,7 @@
             </div>
         </div>
 
-
+        <div id="puffer2" class="puffer"></div>
         <div id="trenner2" class="trenner">Galerie</div>
         <div id="page2" class="page">
                 <div id="nav2" class="nav">
@@ -170,24 +171,36 @@
                     <div class="leftnav" id="leftnavb2" onclick="wechsleInhalt('galerie', 2);">2017</div>
                     <div class="leftnav" id="leftnavb3" onclick="wechsleInhalt('galerie', 3);">2016</div>
                     <div class="leftnav" id="leftnavb4" onclick="wechsleInhalt('galerie', 4);">2015</div>
+                    <div class="leftnav" id="leftnavb5" onclick="wechsleInhalt('galerie', 5);">2014</div>
+                    <div class="leftnav" id="leftnavb6" onclick="wechsleInhalt('galerie', 6);">2013</div>
+                    <div class="leftnav" id="leftnavb7" onclick="wechsleInhalt('galerie', 7);">2012</div>
                 </div>
                 <div id="content2" class="content">
-                    <div id="galerie1">
-                        1
+                    <div id="galerie1" style="display: none;">
+                        Bilder aus dem Jahr 2018 folgen bald
                     </div>
-                    <div id="galerie2" style="display: none;">
-                        2
+                    <div id="galerie2">
+                        
                     </div>
                     <div id="galerie3" style="display: none;">
-                        3
+                        
                     </div>
                     <div id="galerie4" style="display: none;">
-                        4
+                        
+                    </div>
+                    <div id="galerie5" style="display: none;">
+                        
+                    </div>
+                    <div id="galerie6" style="display: none;">
+                        
+                    </div>
+                    <div id="galerie7" style="display: none;">
+                        
                     </div>
                 </div>
         </div>
 
-
+        <div id="puffer3" class="puffer"></div>
         <div id="trenner3" class="trenner">Über uns</div>
         <div id="page3" class="page">
                 <div id="nav3" class="nav">
@@ -246,62 +259,74 @@
                 </div>
         </div>
 
-
+        <div id="puffer4" class="puffer"></div>
         <div id="trenner4" class="trenner">Kontakt</div>
         <div id="page4" class="page">
-                <div id="nav4" class="nav">
-                    <div class="leftnav" id="leftnavd1" onclick="wechsleInhalt('kontakt', 1);">Erreichbarkeit</div>
-                    <div class="leftnav" id="leftnavd2" onclick="wechsleInhalt('kontakt', 2);">Vorstand</div>
-                    <div class="leftnav" id="leftnavd3" onclick="wechsleInhalt('kontakt', 3);">Mitglied werden</div>
+            <div id="nav4" class="nav">
+                <div class="leftnav" id="leftnavd1" onclick="wechsleInhalt('kontakt', 1);">Erreichbarkeit</div>
+                <div class="leftnav" id="leftnavd2" onclick="wechsleInhalt('kontakt', 2);">Vorstand</div>
+                <div class="leftnav" id="leftnavd3" onclick="wechsleInhalt('kontakt', 3);">Mitglied werden</div>
+            </div>
+            <div id="content4" class="content">
+                <div id="kontakt1">
+                    1
                 </div>
-                <div id="content4" class="content">
-                    <div id="kontakt1">
-                        <div id="tabelleangebotehead"><b><u>Mitglieder des Vorstands:</u></b></div>
-                        <table id="tabelleangebote">
-                        <tr>
-                            <td class="vierspalttab">1. Vorsitzender</td>  
-                            <td class="vierspalttab">Martin Morbach</td>
-                            <td class="vierspalttab">Wegewarte</td>
-                            <td class="vierspalttab">Bernhard Kaiser</td>
-                        </tr>
-                        <tr>
-                            <td class="vierspalttab">2. Vorsitzender</td>
-                            <td class="vierspalttab">Hans-Jörg Bär</td>
-                            <td class="vierspalttab"></td>
-                            <td class="vierspalttab">Michael Siebert</td>
-                        </tr>
-                        <tr>
-                            <td class="vierspalttab">Kassierer</td>
-                            <td class="vierspalttab">Willi Büchele</td>
-                            <td class="vierspalttab"></td>
-                            <td class="vierspalttab">Bruno Stich</td>
-                        </tr>   
-                        <tr>
-                            <td class="vierspalttab">Schriftführerin</td>
-                            <td class="vierspalttab">Cornelia Kaiser</td>
-                            <td class="vierspalttab"></td>
-                            <td class="vierspalttab">Bernhard Weber</td>
-                        </tr>
-                        <tr>
-                            <td class="vierspalttab"><u>Wanderwartin</u></td>
-                            <td class="vierspalttab">Johanna Zipfel</td>
-                            <td class="vierspalttab"></td>
-                            <td class="vierspalttab">Werner Wiggert</td>
-                        </tr>   
-                        <tr>
-                            <td class="vierspalttab">Öffentlichkeitsarbeit</td>
-                            <td class="vierspalttab">Bärbel Rutzen</td>
-                        </tr>                
-                        </table>
-                        </div>
-                    <div id="kontakt2" style="display: none;">
-                        2
-                    </div>
-                    <div id="kontakt3" style="display: none;">
-                        3
+                <div id="kontakt2" style="display: none;">
+                    <div id="tabelleangebotehead"><b><u>Mitglieder des Vorstands:</u></b></div>
+                    <table id="tabelleangebote">
+                    <tr>
+                        <td class="vierspalttab">1. Vorsitzender</td>  
+                        <td class="vierspalttab">Martin Morbach</td>
+                        <td class="vierspalttab">Wegewarte</td>
+                        <td class="vierspalttab">Bernhard Kaiser</td>
+                    </tr>
+                    <tr>
+                        <td class="vierspalttab">2. Vorsitzender</td>
+                        <td class="vierspalttab">Hans-Jörg Bär</td>
+                        <td class="vierspalttab"></td>
+                        <td class="vierspalttab">Michael Siebert</td>
+                    </tr>
+                    <tr>
+                        <td class="vierspalttab">Kassierer</td>
+                        <td class="vierspalttab">Willi Büchele</td>
+                        <td class="vierspalttab"></td>
+                        <td class="vierspalttab">Bruno Stich</td>
+                    </tr>   
+                    <tr>
+                        <td class="vierspalttab">Schriftführerin</td>
+                        <td class="vierspalttab">Cornelia Kaiser</td>
+                        <td class="vierspalttab"></td>
+                        <td class="vierspalttab">Bernhard Weber</td>
+                    </tr>
+                    <tr>
+                        <td class="vierspalttab">Wanderwartin</td>
+                        <td class="vierspalttab">Johanna Zipfel</td>
+                        <td class="vierspalttab"></td>
+                        <td class="vierspalttab">Werner Wiggert</td>
+                    </tr>   
+                    <tr>
+                        <td class="vierspalttab">Öffentlichkeitsarbeit</td>
+                        <td class="vierspalttab">Bärbel Rutzen</td>
+                    </tr>                
+                    </table>
+                    <img src="img/weitere seiten/57 Vorstand.jpg" id="vorstandpic">
+                    <div id="vorstanddesc">1. Reihe: Name <i>(Rolle)</i><br><br> 2. Reihe: Name <i>(Rolle)</i> </div>
+                </div>
+                <div id="kontakt3" style="display: none;">
+                    <div class="textdivbig">
+                        Sie können gleich hier Mitglied werden, indem Sie unser  
+                        <div id="anmeldung" onclick="showanmeldeform();">Anmeldeformular</div>
+                        Ausfüllen. Wir melden uns dann umgehend. <br><br>
+                        Bei Fragen zur Anmeldung können Sie sich gerne an unsere Email-Adresse: 
+                        <a href="mailto:natur-wanderverein-dachsberg@web.de">natur-wanderverein-dachsberg@web.de</a>
+                        wenden, wir rufen Sie auch gerne zurück.<br><br>
+                        Selbstverständlich können Sie sich auch persönlich anmelden, wenn Sie als Gast an einer unserer Wanderungen teilnehmen.<br><br>
+                        Der Jahresbeitrag für Einzelmitglieder beträgt 7 €, für Familienmitgliedschaft 10 €.
                     </div>
                 </div>
+            </div>
         </div>
+        <div id="puffer5"></div>
     </div>
     </body>
 </html>
