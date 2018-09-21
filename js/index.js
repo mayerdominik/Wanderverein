@@ -189,7 +189,6 @@ function showSlides() {
     }
     slides[slideIndex].style.display = "block";  
     dots[slideIndex].className += " active";
-    console.log(slideIndex);
     slideIndex++;
     if (slideIndex == slides.length) {slideIndex = 0} ;
     setTimeout(showSlides, 5000);
