@@ -3,6 +3,8 @@
 var files = fs.readdirSync('/img/Jahresgalerie/2007');
 console.log(files.length);*/
 
+
+
 function loadpics(id, jahr, anzahl){
     let folderurl = "img/Jahresgalerie/" + jahr + "/Komprimiert/" ;
     let folderurlbig = "img/Jahresgalerie/" + jahr + "/" ;
@@ -32,3 +34,4 @@ function zeigelogo(bildid){
     temp.src = 'img/weitere seiten/Platzhalter.jpg';
     temp.parentElement.href = "img/weitere seiten/Platzhalter.jpg";
 }
+

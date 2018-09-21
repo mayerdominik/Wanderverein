@@ -7,14 +7,15 @@ $(document).ready(function() {
         document.getElementById("leftnavd1").classList.add("selected");
         loadpics(2, "2017", 34);
         adjustheight(ah);
+        
     }
+    showSlides();
   });
 let page1 = "1";
 let page2 = "2";
 let page3 = "1";
 let page4 = "1";
-
-
+var slideIndex = 0;
 
 function scrollFunction(){
     let topnav = document.getElementsByClassName("topnav");
@@ -175,6 +176,23 @@ function adjustheight(id){
     else{
         document.getElementById(nav).style.height= right;
     }
+}
+
+function showSlides() {
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (let i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    for (let j = 0; j < dots.length; j++) {
+        dots[j].className = dots[j].className.replace(" active", "");
+    }
+    slides[slideIndex].style.display = "block";  
+    dots[slideIndex].className += " active";
+    console.log(slideIndex);
+    slideIndex++;
+    if (slideIndex == slides.length) {slideIndex = 0} ;
+    setTimeout(showSlides, 5000);
 }
 
 /*function springezu(id){
