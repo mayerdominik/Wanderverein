@@ -296,7 +296,7 @@ body{
     visibility: hidden;
 }
 #puffer0{
-    margin-top: 70px;
+    margin-top: 60px;
     transition: 0.3s;
 }
 #puffer5{
@@ -333,6 +333,7 @@ body{
   max-width: 80%;
   position: relative;
   margin: auto;
+  top: 5px;
 }
 
 /* Caption text */
