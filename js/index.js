@@ -142,6 +142,7 @@ function wechsleInhalt(seite, id){
             if(elementneu == "kontakt1"){
                 navneu="leftnavd1";
                 adjustheight(4);
+                //document.getElementById("page4").style.background = "img/weitere seiten/56 Moorhuette Erreichbarkeit-Seite.jpg";
             }
             if(elementneu == "kontakt2"){
                 navneu="leftnavd2";
@@ -193,6 +194,7 @@ function showSlides() {
     if (slideIndex == slides.length) {slideIndex = 0} ;
     setTimeout(showSlides, 5000);
 }
+
 
 /*function springezu(id){
     let trennerid = "trenner" + id;
