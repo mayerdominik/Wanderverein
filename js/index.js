@@ -7,7 +7,6 @@ $(document).ready(function() {
         document.getElementById("leftnavd1").classList.add("selected");
         loadpics(2, "2017", 34);
         adjustheight(ah);
-        
     }
     showSlides();
   });
@@ -142,7 +141,8 @@ function wechsleInhalt(seite, id){
             if(elementneu == "kontakt1"){
                 navneu="leftnavd1";
                 adjustheight(4);
-                //document.getElementById("page4").style.background = "img/weitere seiten/56 Moorhuette Erreichbarkeit-Seite.jpg";
+                document.getElementById("page4").style.backgroundImage = "url('img/weitere seiten/56 Moorhuette Erreichbarkeit-Seite.jpg') no-repeat";
+                //document.getElementById("page4").style.background = "";
             }
             if(elementneu == "kontakt2"){
                 navneu="leftnavd2";

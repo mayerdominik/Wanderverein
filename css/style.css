@@ -3,15 +3,37 @@ body{
     text-align: center;
     color: #008080;
 }
+
+
+
 @font-face {
-    font-family: TW Cen MT condensed;
-    src: url('docs/TW Cen MT Condensed.ttf');
-}
+    font-family: 'Tw Cen MT Condensed';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Tw Cen MT Condensed'), url('TCCM.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Tw Cen MT Condensed Extra Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Tw Cen MT Condensed Extra Bold'), url('TCCEB.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Tw Cen MT Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Tw Cen MT Bold'), url('TCB.woff') format('woff');
+    }
+
 #webseite{
     width: 75%;
     margin: 0 auto;
     min-width: 840px;
-    font-family: TW Cen MT condensed;
+    font-family: Tw Cen MT Condensed, Arial;
 }
 #titel{
     color:#008080;
