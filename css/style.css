@@ -105,6 +105,7 @@ body{
 #logobild{
     transition: 0.3s;
     border-radius: 5px;
+    height: 78px;
 }
 .topnav{
     float: right;
