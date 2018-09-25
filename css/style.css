@@ -77,12 +77,13 @@ body{
 }
 .page{
     margin-top: 5px;
+    border-radius: 5px;
     overflow: auto;
 }
 .nav{
     float: left;
     width: 30%;
-    background: rgba(214, 214, 214, 0.75);;
+    background: rgba(214, 214, 214, 0.6);
     border-radius: 5px;
     text-align: left;
     
@@ -90,7 +91,7 @@ body{
 .content{
     float: right;
     width: 69.5%;
-    background: rgba(214, 214, 214, 0.75);;
+    background: rgba(214, 214, 214, 0.6);
     color: black;
     border-radius: 5px;
 }
@@ -347,6 +348,7 @@ body{
     background: #008080;
     
 }
+
 #anmeldung{
     background: #008080;
     color: white;

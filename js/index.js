@@ -9,6 +9,8 @@ $(document).ready(function() {
         adjustheight(ah);
     }
     showSlides();
+    wechsleInhalt('ueberuns', 1);
+    wechsleInhalt('kontakt', 1);
   });
 let page1 = "1";
 let page2 = "2";
@@ -123,10 +125,12 @@ function wechsleInhalt(seite, id){
             document.getElementById(elementneu).style.display = "inline";
             page3 = id;
             if(elementneu == "ueberuns1"){
+                addBackgroundImg(3, "54 Zeitungsfoto Wir ueber uns Seite crop.jpg", 0.69494949);
                 navneu="leftnavc1";
                 adjustheight(3);
             }
             if(elementneu == "ueberuns2"){
+                addBackgroundImg(3, "55 Feier Gemeinschaft-Seite.jpg", 0.75);
                 navneu="leftnavc2";
                 adjustheight(3);
             }
@@ -139,16 +143,17 @@ function wechsleInhalt(seite, id){
             document.getElementById(elementneu).style.display = "inline";
             page4 = id;
             if(elementneu == "kontakt1"){
+                addBackgroundImg(4, "56 Moorhuette Erreichbarkeit-Seite.jpg", 0.6);
                 navneu="leftnavd1";
                 adjustheight(4);
-                document.getElementById("page4").style.backgroundImage = "url('img/weitere seiten/56 Moorhuette Erreichbarkeit-Seite.jpg') no-repeat";
-                //document.getElementById("page4").style.background = "";
             }
             if(elementneu == "kontakt2"){
+                removeBackgroundImg(4);
                 navneu="leftnavd2";
                 adjustheight(4);
             }
             if(elementneu == "kontakt3"){
+                removeBackgroundImg(4);
                 navneu="leftnavd3";
                 adjustheight(4);
             }
@@ -195,6 +200,20 @@ function showSlides() {
     setTimeout(showSlides, 5000);
 }
 
+function addBackgroundImg(nummer, url, relation){
+    document.getElementById("page" + nummer).style.backgroundImage = "url('img/weitere seiten/" + url + "'" + ")";
+    document.getElementById("page" + nummer).style.backgroundRepeat = "no-repeat";
+    document.getElementById("page" + nummer).style.backgroundSize = "cover";
+    let height = relation * document.getElementById("page" + nummer).clientWidth;
+    document.getElementById("page" + nummer).style.height = height;
+    document.getElementById("nav" + nummer).style.height= height;
+    document.getElementById("content" + nummer).style.height= height;
+}
+
+function removeBackgroundImg(nummer){
+    document.getElementById("page" + nummer).style.backgroundImage = "";
+    document.getElementById("page" + nummer).style.height = "auto";
+}
 
 /*function springezu(id){
     let trennerid = "trenner" + id;
