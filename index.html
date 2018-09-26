@@ -69,7 +69,7 @@
         <div class="mySlides fade">
             <div class="numbertext">8 / 12</div>
             <img src="img/startseite/8.jpg" class="imgkarusell">
-            <div class="text">Die Kalte Herberge</div>
+            <div class="text">Bei der Kalten Herberge</div>
         </div>
         <div class="mySlides fade">
             <div class="numbertext">9 / 12</div>
@@ -88,25 +88,11 @@
         </div>
         <div class="mySlides fade">
             <div class="numbertext">12 / 12</div>
-            <img src="img/startseite/45.jpg" class="imgkarusell">
-            <div class="text">Blick auf den Belchen</div>
+            <img src="img/startseite/12.jpg" class="imgkarusell">
+            <div class="text">Blick in den Hotzenwald</div>
         </div>
     </div>
     <br>
-        <div style="text-align:center">
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-          <span class="dot"></span>
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-          <span class="dot"></span>  
-        </div>
         
         <div id="puffer1" class="puffer"></div>
         <div id="trenner1" class="trenner">Angebote</div>
@@ -344,6 +330,8 @@
                 <div class="leftnav" id="leftnavd1" onclick="wechsleInhalt('kontakt', 1);">Erreichbarkeit</div>
                 <div class="leftnav" id="leftnavd2" onclick="wechsleInhalt('kontakt', 2);">Vorstand</div>
                 <div class="leftnav" id="leftnavd3" onclick="wechsleInhalt('kontakt', 3);">Mitglied werden</div>
+                <div class="leftnav" id="leftnavd4" onclick="wechsleInhalt('kontakt', 4);">Datenschutz</div>
+                <div class="leftnav" id="leftnavd5" onclick="wechsleInhalt('kontakt', 5);">Impressum</div>
             </div>
             <div id="content4" class="content">
                 <div id="kontakt1">
@@ -401,18 +389,186 @@
                     </tr>                
                     </table>
                     <img src="img/weitere seiten/57 Vorstand.jpg" id="vorstandpic">
-                    <div id="vorstanddesc">1. Reihe: Name <i>(Rolle)</i><br><br> 2. Reihe: Name <i>(Rolle)</i> </div>
+                    <div id="vorstanddesc"><i>1. Reihe v.L.: </i>Martin Morbach, Hans-Jörg Bär, Willi Büchele, Cornelia Kaiser, Johanna Zipfel, Bärbel Rutzen<br><br> <i>2. Reihe v.L.:</i> Bernhard Kaiser, Michael Siebert, Bruno Stich, Bernhard Weber, Werner Wiggert</div>
                 </div>
                 <div id="kontakt3" style="display: none;">
                     <div class="textdivbig">
                         Sie können gleich hier Mitglied werden, indem Sie unser  
-                        <div id="anmeldung" onclick="showanmeldeform();">Anmeldeformular</div>
+                        <div id="anmeldung" onclick="location.href='#formhead';">Anmeldeformular</div>
                         Ausfüllen. Wir melden uns dann umgehend. <br><br>
                         Bei Fragen zur Anmeldung können Sie sich gerne an unsere Email-Adresse: 
                         <a href="mailto:natur-wanderverein-dachsberg@web.de">natur-wanderverein-dachsberg@web.de</a>
                         wenden, wir rufen Sie auch gerne zurück.<br><br>
                         Selbstverständlich können Sie sich auch persönlich anmelden, wenn Sie als Gast an einer unserer Wanderungen teilnehmen.<br><br>
                         Der Jahresbeitrag für Einzelmitglieder beträgt 7 €, für Familienmitgliedschaft 10 €.
+                    </div>
+                    <div id="anmeldeformular">
+                    <form>
+                        <div id="formhead">Anmeldeformular Natur- und Wanderverein Dachsberg e.V.</div>
+                        <div class="namediv">
+                            <label for="name1" class="label">Vor- und Nachname</label><br>
+                            <input type="text" class="name" id="name1" value="">
+                        </div>
+                        <div class="gebdiv">
+                            <label for="geb1" class="label">Geburtsdatum</label><br>
+                            <input type="date" class="geb" id="geb1" value="">
+                        </div>
+
+                        <div class="namediv">
+                            <label for="name2" class="label">Vor- und Nachname Ehe-/Lebenspartner</label><br>
+                            <input type="text" class="name" id="name2" value="">
+                        </div>
+                        <div class="gebdiv">
+                            <label for="geb2" class="label">Geburtsdatum</label><br>
+                            <input type="date" class="geb" id="geb2" value="">
+                        </div>
+                        
+                        <div class="namediv">
+                            <label for="name3" class="label">Vor- und Nachname 1. Kind</label><br>
+                            <input type="text" class="name" id="name3" value="">
+                        </div>
+                        <div class="gebdiv">
+                            <label for="geb3" class="label">Geburtsdatum</label><br>
+                            <input type="date" class="geb" id="geb3" value="">
+                        </div>
+
+                        <div class="namediv">
+                            <label for="name4" class="label">Vor- und Nachname 2. Kind</label><br>
+                            <input type="text" class="name" id="name4" value="">
+                        </div>
+                        <div class="gebdiv">
+                            <label for="geb4" class="label">Geburtsdatum</label><br>
+                            <input type="date" class="geb" id="geb4" value="">
+                        </div>
+
+                        <div class="namediv">
+                            <label for="name5" class="label">Vor- und Nachname 3. Kind</label><br>
+                            <input type="text" class="name" id="name5" value="">
+                        </div>
+                        <div class="gebdiv">
+                            <label for="geb5" class="label">Geburtsdatum</label><br>
+                            <input type="date" class="geb" id="geb5" value="">
+                        </div>
+
+                        <div class="namediv">
+                            <label for="name6" class="label">Vor- und Nachname 4. Kind</label><br>
+                            <input type="text" class="name" id="name6" value="">
+                        </div>
+                        <div class="gebdiv">
+                            <label for="geb6" class="label">Geburtsdatum</label><br>
+                            <input type="date" class="geb" id="geb6" value="">
+                        </div>
+
+                        <div class="datendiv">
+                            <label for="daten1" class="label">Straße und Hausnummer</label><br>
+                            <input type="text" class="daten" id="daten1" value="">
+                        </div>
+                        <div class="datendiv">
+                            <label for="daten2" class="label">Postleitzahl & Ort</label><br>
+                            <input type="text" class="daten" id="daten2" value="">
+                        </div>
+                        <div class="datendiv">
+                            <label for="daten1" class="label">E-Mail</label><br>
+                            <input type="text" class="daten" id="daten3" value="">
+                        </div>
+                        <div id="checkformdiv">
+                            <input type="checkbox" id="checkform"> 
+                            <label for="checkform" id="checkformlabel">[Pflichtangabe] Hiermit Bestätige ich, dass ich die Datenschutzordnung gelesen habe und sie akzeptiere:</label>
+                        </div>
+                        <input type="submit" id="submitform" onclick="submitform();" value="Formular Abschicken">
+                    </form>
+                    </div>
+                </div>
+                <div id="kontakt4" style="display: none;">
+                    <div class="textdivsmall langesdiv">
+                        <span class="texttitel"><b><u>Datenschutzverordnung:</u></b></span><br><br>
+                        <span class="texttitel"><b>Allgemeine Hinweise</b></span><br>
+                        Nachfolgend möchten wir Sie über die Art, den Umfang und die Zwecke der Erhebung und Verwendung Ihrer personenbezogenen Daten auf unserer Webseite informieren. 
+                        Wir behandeln personenbezogene Daten gemäß dieser Datenschutzerklärung und der gesetzlichen Vorschriften grundsätzlich vertraulich. Den Schutz Ihrer persönlichen Daten nehmen wir sehr ernst. 
+                        Wenn Sie unsere Website benutzen, werden verschiedene personenbezogene Daten erhoben. Personenbezogene Daten sind Daten, mit denen Sie persönlich identifiziert werden können. 
+                        Die vorliegende Datenschutzerklärung erläutert, welche Daten wir erheben und wofür wir diese nutzen. Sie erläutert auch, wie und zu welchem Zweck das geschieht. 
+                        Eine Datenübertragung im Internet kann z.B. bei E-Mail-Kommunikation Sicherheitslücken aufweisen Wir möchten Sie darauf hinweisen, dass ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte nicht möglich ist. 
+                        <br><br>
+                        <span class="texttitel"><b>Datenerfassung auf unserer Website</b></span>
+                        <br><br>
+                        <span class="texttitel"><b>Wer ist verantwortlich für die Datenerfassung auf dieser Website?</b></span>
+                        <br>
+                        Natur- und Wanderverein Dachsberg e.V.<br>
+                        
+                        Bärbel Rutzen
+                        <br><br>
+                        Vorstand i.S.d. § 26 BGB: Martin Morbach<br>
+                        Mühlemattweg 7<br>
+                        79875 Dachsberg <br>
+                        Email: natur-wanderverein-dachsberg@web.de
+                        <br><br>
+                        <span class="texttitel"><b>Hosting</b></span><br>
+                        Unsere in Anspruch genommenen Hosting-Leistungen, um den Betrieb der Homepage sicherzustellen, umfassen folgende Leistungen: Plattformdienstleistungen, Webspace, Datenbank, technische Wartung.
+                        <br><br>
+                        <span class="texttitel"><b>Welche Daten werden erfasst und wie?</b></span><br>
+                        <b>Server-Log-Dateien</b><br>
+                        Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien, die Ihr Browser automatisch übermittelt. Dies sind:<br>
+                        -	Browsertyp und Browserversion<br>
+                        -	verwendetes Betriebssystem <br>
+                        -	Referrer URL <br>
+                        -	Hostname des zugreifenden Rechners <br>
+                        -	Uhrzeit der Serveranfrage <br>
+                        -	IP-Adresse <br><br>
+                        Diese werden benötigt, um Angriffe, einen fehlerhaften Code oder allgemeine Fehler zu identifizieren und werden nach vier Wochen vom Webserver automatisch gelöscht. Eine Zusammenführung dieser Daten mit anderen Datenquellen findet nicht statt. Grundlage für die Datenverarbeitung ist Art. 6 Abs. 1, b DSGVO, der die Verarbeitung von Daten zur Erfüllung eines Vertrags oder vorvertraglicher Maßnahmen gestattet. 
+                        <br><br>
+                        <!--<span class="texttitel"><b>Cookies</b></span> 
+                        Die Internetseiten verwenden so genannte Cookies. Cookies richten auf Ihrem Rechner keinen Schaden an und enthalten keine Viren. Cookies dienen dazu, unser Angebot nutzerfreundlicher, effektiver und sicherer zu machen. Cookies sind kleine Textdateien, die auf Ihrem Rechner abgelegt werden und die Ihr Browser speichert.
+                        <br><br>
+                        Die meisten der von uns verwendeten Cookies sind so genannte “Session-Cookies”. Sie werden nach Ende Ihres Besuchs automatisch gelöscht. Andere Cookies bleiben auf Ihrem Endgerät gespeichert bis Sie diese löschen. Diese Cookies ermöglichen es uns, Ihren Browser beim nächsten Besuch wiederzuerkennen. 
+                        <br>Sie können Ihren Browser so einstellen, dass Sie über das Setzen von Cookies informiert werden und Cookies nur im Einzelfall erlauben, die Annahme von Cookies für bestimmte Fälle oder generell ausschließen sowie das automatische Löschen der Cookies beim Schließen des Browsers aktivieren. Bei der Deaktivierung von Cookies kann die Funktionalität dieser Website eingeschränkt sein. 
+                        <br>Cookies, die zur Durchführung des elektronischen Kommunikationsvorgangs oder zur Bereitstellung bestimmter, von Ihnen erwünschter Funktionen (z.B. Warenkorbfunktion) erforderlich sind, werden auf Grundlage von Art. 6 Abs. 1, f DSGVO gespeichert. Der Websitebetreiber hat ein berechtigtes Interesse an der Speicherung von Cookies zur technisch fehlerfreien und optimierten Bereitstellung seiner Dienste. 
+                        -->
+                        <span class="texttitel"><b>Wofür werden erhobene Daten genutzt?</b></span><br>
+                        Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Andere Daten können zur Analyse des Nutzerverhaltens verwendet werden. 
+                        <br><br>
+                        <span class="texttitel"><b>Analyse-Tools und Tools von Drittanbietern </b></span><br>
+                        Wir verwenden keine Analyse-Tools und Tools von Drittanbietern. 
+                        <br><br>
+                        <span class="texttitel"><b>Kontaktformulare, RSS-Feeds, Onlinemelder</b></span><br>
+                        Wir verarbeiten Daten (z. B. Namen und Adressen sowie Kontaktdaten von Nutzern), die in den Kontaktformularen erhoben werden, um vertraglichen Verpflichtungen oder Serviceleistungen nachzukommen.
+                        <br><br>
+                        <span class="texttitel"><b>Welche Rechte haben Sie bezüglich Ihrer Daten?</b></span><br>
+                        Auskunft, Sperrung, Löschung Sie haben jederzeit das Recht unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem das Recht, die Berichtigung, Sperrung oder Löschung Ihrer Daten zu verlangen. Des Weiteren steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.
+                        <br><br>
+                        <span class="texttitel"><b>Widerruf Ihrer Einwilligung zur Datenverarbeitung </b></span><br>
+                        Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie können eine bereits erteilte Einwilligung jederzeit widerrufen. Dazu reicht eine formlose Mitteilung per E-Mail an uns. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.
+                        <br><br>
+                        <span class="texttitel"><b>Beschwerderecht bei der zuständigen Aufsichtsbehörde </b></span><br>
+                        Im Falle datenschutzrechtlicher Verstöße steht dem Betroffenen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu. Die Beschwerde kann über den Link https://www.baden-wuerttemberg.datenschutz.de/beschwerde-online-einreichen/
+                        An die zuständigenLandesdatenschutzbeauftragten der Aufsichtsbehörde in Baden-Württemberg erfolgen.
+                        <br><br>
+                        <span class="texttitel"><b>Recht auf Datenübertragbarkeit</b></span><br> 
+                        Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erfüllung eines Vertrags automatisiert verarbeiten, an sich oder an einen Dritten in einem gängigen, maschinenlesbaren Format aushändigen zu lassen. Sofern Sie die direkte Übertragung der Daten an einen anderen Verantwortlichen verlangen, erfolgt dies nur, soweit es technisch machbar ist.
+                    </div>
+                </div>
+
+                <div id="kontakt5" style="display: none;">
+                    <div class="textdivsmall langesdiv">
+                            <span class="texttitel"><b><u>Impressum</u></b></span><br><br>
+                            Angaben gemäß § 5 TMG <br><br>
+                            <b>Natur- und Wanderverein Dachsberg e.V.<br>
+                            Mühlemattweg 7<br>
+                            79875 Dachsberg <br>
+                            natur-wanderverein-dachsberg@web.de</b>
+                            <br><br>
+                            <span class="texttitel"><b>Vertreten durch:</b></span><br>
+                            Martin Moorbach<br><br>
+                            <span class="texttitel"><b>Haftung für Inhalte</b></span><br><br>
+                            
+                            Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
+                            <br><br>
+                            <span class="texttitel"><b>Haftung für Links</b></span><br><br>
+                            
+                            Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
+                            <br><br>
+                            <span class="texttitel"><b>Urheberrecht</b></span><br><br>
+                            Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.
+                            Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
                     </div>
                 </div>
             </div>

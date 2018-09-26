@@ -262,6 +262,7 @@ body{
 .selected{
     background:#008080;
     color: white;
+    border-color: white;
 }
 #divtourplaner{
     text-align: center;
@@ -290,6 +291,11 @@ body{
 #divtourplaner:hover .divtpchild{
     color: white;
 }
+.textdivsmall{
+    text-align: left;
+    padding: 4%;
+    font-size: 20px;
+}
 .textdiv{
     text-align: left;
     padding: 3%;
@@ -300,7 +306,13 @@ body{
     padding: 4%;
     font-size: 35px;
 }
-
+.texttitel{
+    font-size: 26px;
+}
+.langesdiv{
+    max-height: 650px;
+    overflow: auto;
+}
 .galerie{
     width: 20%;
     border-style: solid;
@@ -325,7 +337,7 @@ body{
     visibility: hidden;
 }
 #puffer0{
-    margin-top: 60px;
+    margin-top: 70px;
     transition: 0.3s;
 }
 #puffer5{
@@ -348,14 +360,100 @@ body{
     background: #008080;
     
 }
-
 #anmeldung{
     background: #008080;
     color: white;
     display: inline-block;
     padding: 2px;
 }
-
+#formhead{
+    text-align: center;
+    font-size: 30px;
+    background: #008080;
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 10px;
+}
+#anmeldeformular{
+    background-color: rgba(0, 132, 255, 0.2);
+    padding-bottom: 20px;
+}
+.namediv{
+    margin-left: 14%;
+    margin-right: 2%;
+    width: 50%;
+    float: left;
+    text-align: left;
+    padding: 1%;
+}
+.gebdiv{
+    width: 20%;
+    float: left;
+    text-align: left;
+    padding: 1%;
+}
+.datendiv{
+    margin-left: 14%;
+    width: 72%;
+    float: left;
+    text-align: left;
+    padding: 1%;
+}
+.name{
+    border-radius: 10px;
+    border-color: #008080;
+    width: 100%;
+    padding: 4px;
+    font-size: 16px;
+}
+.geb{
+    border-radius: 10px;
+    border-color: #008080;
+    width: 100%;
+    padding: 4px;
+    font-size: 16px;
+}
+.daten{
+    border-radius: 10px;
+    border-color: #008080;
+    width: 100%;
+    padding: 4px;
+    font-size: 16px;
+}
+.label{
+    font-size: 20px;
+}
+#checkformdiv{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    
+}
+#checkform{
+    width: 4%;
+}
+#checkformlabel{
+    font-size: 24px; 
+    color: red;
+}
+#submitform{
+    background-color: white;
+    color: #008080;
+    border-style: solid;
+    border-color: #008080;
+    border-width: 2px;
+    border-radius: 10px;
+    width: auto;
+    padding: 2%;
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: Tw Cen MT Condensed; 
+}
+#submitform:hover{
+    background: #008080;
+    color: white;
+}
 
 * {box-sizing: border-box;}
 .mySlides {display: none;}

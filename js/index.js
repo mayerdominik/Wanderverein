@@ -9,6 +9,7 @@ $(document).ready(function() {
         adjustheight(ah);
     }
     showSlides();
+    wechsleInhalt('angebote', 1);
     wechsleInhalt('ueberuns', 1);
     wechsleInhalt('kontakt', 1);
   });
@@ -60,15 +61,18 @@ function wechsleInhalt(seite, id){
             document.getElementById(elementneu).style.top = "0";
             page1 = id;
             if(elementneu == "angebote1"){
+                removeBackgroundImg(1);
                 navneu="leftnava1";
                 document.getElementById("angebotenav").innerHTML = '<img id="bildangebote" src="img/weitere seiten/50 Wegweiser Wanderplan-Seite.jpg" onload="adjustheight(1);">';
             }
             if(elementneu == "angebote2"){
+                removeBackgroundImg(1);
                 navneu="leftnava2";
                 document.getElementById("angebotenav").innerHTML = '<img id="bildangebote2" src="img/weitere seiten/51 Kreuzfelsen vorher Aktionen-Seite.jpg" onload="adjustheight(1);"> <p id="bildangebote2desc">Kreuzfelsen vorher/nachher</p> <img id="bildangebote3" src="img/weitere seiten/52 Kreuzfelsen nachher Aktionen-Seite.jpg" onload="adjustheight(1);">';
             } 
             if(elementneu == "angebote3"){
                 navneu="leftnava3";
+                addBackgroundImg(1, "53 Feldsee Wandertouren-Seite.jpg", 0.66666);
                 let angebote3string = '<div id ="divtourplaner"><a href="https://www.touren-suedschwarzwald.de/de/tourenplaner/" class="divtpchild" target="_blank">Tourenplaner der Ferienwelt Südschwarzwald</a></div>';
                 document.getElementById("angebotenav").innerHTML = angebote3string;
                 adjustheight(1);
@@ -157,6 +161,16 @@ function wechsleInhalt(seite, id){
                 navneu="leftnavd3";
                 adjustheight(4);
             }
+            if(elementneu == "kontakt4"){
+                removeBackgroundImg(4);
+                navneu="leftnavd4";
+                adjustheight(4);
+            }
+            if(elementneu == "kontakt5"){
+                removeBackgroundImg(4);
+                navneu="leftnavd5";
+                adjustheight(4);
+            }
             break;
         }
         document.getElementById(navalt).classList.remove("selected");
@@ -186,15 +200,10 @@ function adjustheight(id){
 
 function showSlides() {
     var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
     for (let i = 0; i < slides.length; i++) {
        slides[i].style.display = "none";
     }
-    for (let j = 0; j < dots.length; j++) {
-        dots[j].className = dots[j].className.replace(" active", "");
-    }
     slides[slideIndex].style.display = "block";  
-    dots[slideIndex].className += " active";
     slideIndex++;
     if (slideIndex == slides.length) {slideIndex = 0} ;
     setTimeout(showSlides, 5000);
@@ -215,14 +224,6 @@ function removeBackgroundImg(nummer){
     document.getElementById("page" + nummer).style.height = "auto";
 }
 
-/*function springezu(id){
-    let trennerid = "trenner" + id;
-    let seite = document.getElementById("webseite");
-    let trenner = document.getElementById(trennerid);
-    let puffer = document.createElement("div");
-    puffer.className = "puffer";
-    puffer.id = "puffer";
-    seite.insertBefore(puffer, trenner);
-    trenner.style.marginTop = "90px";
-    location.href="#puffer";
-}*/
+function submitform(){
+    //Checken ob angaben passen, form daten als email schicken, Inhalt ändern zu "Danke für die anmeldung", href auf kontakt3
+}
