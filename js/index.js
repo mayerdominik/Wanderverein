@@ -87,6 +87,7 @@ function wechsleInhalt(seite, id){
             document.getElementById(elementneu).style.display = "inline";
             page2 = id;
             if(elementneu == "galerie1"){
+                loadpics(1, "2018", 1);
                 navneu="leftnavb1";
                 adjustheight(2);
             }
@@ -224,6 +225,32 @@ function removeBackgroundImg(nummer){
     document.getElementById("page" + nummer).style.height = "auto";
 }
 
-function submitform(){
+function submitForm(){
+    if(document.getElementById("checkform").checked == false){
+        alert("Bitte bestätigen Sie Ihr Einverständnis mit der Datenschutzerklärung");
+    }
+    else{
+        var email = "natur-wanderverein-dachsberg@web.de"
+        var mailto_link = 'mailto:' + email
+        var subject = "Mitgliedschaftsantrag " + document.getElementById("name1").value;
+        var body = "";
+        var name;
+        var geb;
+        var daten;
+
+        for(let i=1; i<=6; i++){
+            if(document.getElementById("name" + i).value != ""){
+                body += 'Name ' + i + ': ' + document.getElementById("name" + i).value + '; Geburtsdatum ' + i + ': ' + document.getElementById("geb" + i).value + ';';
+            }
+        }
+        body += 'Adresse 1: ' + document.getElementById("daten1").value + ';';
+        body += 'Adresse 2: ' + document.getElementById("daten2").value + ';';
+        body += 'E-Mail: ' + document.getElementById("daten3").value + ';';
+        
+        window = window.open(mailto_link + '?subject=' + subject + '&body=' + body);
+        if (window && window.open && !window.closed){
+           window.close() 
+        }   
+    }
     //Checken ob angaben passen, form daten als email schicken, Inhalt ändern zu "Danke für die anmeldung", href auf kontakt3
 }
